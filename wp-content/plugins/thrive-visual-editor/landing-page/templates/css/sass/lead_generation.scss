@@ -1,0 +1,165 @@
+@import "compass/css3";
+@import "compass/support";
+@import "_common";
+@import "lead_generation_lightbox";
+
+.tve_wrap_all {
+  margin-top: 90px;
+  h1, h2, h3, h4, h5, h6, p, blockquote, a, address, pre, blockquote, ul, li {
+    font-family: 'Raleway';
+    font-weight: 300;
+  }
+  h1, h2, h3, h4, h5, h6, p {
+    color: #ffffff;
+  }
+  a, a:hover {
+    color: inherit;
+  }
+  .bold_text {
+    font-weight: 500;
+  }
+}
+
+body {
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  &.tve_lp {
+    background-color: #983837;
+    background-image: url("./images/landing_page_3_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .tve_wrap_all {
+    padding: 0;
+  }
+  .tve_content_width, .thrv_page_section .out .in {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1080px;
+  }
+  h1 {
+    @include text-shadow(0px 2px 5px rgba(#000, .2));
+    font-weight: normal;
+  }
+  .tve_lp_lead_generation {
+    .tve_btn {
+      @include box-sizing(border-box);
+      font-size: 30px;
+      margin-bottom: 3px;
+      &.tve_btn3 {
+        @include border-radius(100px);
+      }
+      &:active {
+        background-image: none;
+      }
+      &.tve_white {
+        a {
+          color: #636363;
+        }
+      }
+    }
+  }
+}
+
+$color-pallete: 'black' #333333 #3d3d3d #181818 #3d3c3c #292929 #151515,
+'blue' #3ab2f0 #1589de #2e4f8a #6495ea #2754a4 #22447f,
+'green' #52DC35 #fff #7c9735 #a1bf47 #536424 #127a20,
+'orange' #ffc300 #ffcc00 #d2a000 #fad232 #ebb503 #c09300,
+'purple' #8656c1 #934de9 #694398 #b274ff #603595 #451c79,
+'red' #ce271b #e03f34 #ce180b #ee3528 #c61407 #ff1100,
+'teal' #45e4c8 #7CDECD #306d62 #0acba9 #10d2b0 #0e7361,
+'white' #d8d8d8 #fff #d8d8d8 #f4f4f4 #838383 #4e4e4e;
+
+@each $color in $color-pallete {
+  .tve_lp_lead_generation {
+    .thrv_button_shortcode {
+      .tve_btn.tve_#{nth($color, 1)}.tve_btn3 {
+        @include box-shadow(0px 1px 0px 0px rgba(nth($color, 3), .15) inset, 0px 2px 3px 0px rgba(nth($color, 7), .43));
+        background-image: linear-gradient(nth($color, 5), nth($color, 4));
+        border: 1px solid rgba(nth($color, 6), .82);
+        &:hover {
+          background-image: linear-gradient(nth($color, 4), nth($color, 5));
+        }
+        &:active {
+          background-color: nth($color, 4);
+        }
+      }
+    }
+  }
+}
+
+.tve_lp_footer {
+  position: relative;
+  .thrv_columns {
+    .tve_twc {
+      box-sizing: border-box;
+      padding: 0 10px;
+      width: 50%;
+      &.tve_lst {
+        border-left: 1px solid #999999;
+      }
+    }
+    a {
+      color: #999999;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+/* page sections */
+.tve_post_lp {
+  .tve_lp_header {
+    min-height: 30px;
+  }
+  .tve_lp_content {
+    .out {
+      width: 6080px;
+      margin-left: -2500px;
+    }
+  }
+  .out {
+    .in {
+      &.pddbg {
+        .cck {
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 1080px;
+        }
+      }
+    }
+  }
+  .tve_lp_header, .tve_lp_footer {
+    .out {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 774px) {
+  .tve_wrap_all {
+    margin-top: 10px;
+  }
+  .tve_lp_footer .thrv_columns .tve_twc.tve_lst {
+    border-width: 0;
+  }
+  .tve_lp_content {
+    .thrv_columns {
+      .tve_twc {
+        img {
+          display: table;
+          max-width: 150px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+@import "_responsive";

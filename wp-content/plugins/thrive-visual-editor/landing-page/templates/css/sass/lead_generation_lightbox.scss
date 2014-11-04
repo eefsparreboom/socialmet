@@ -1,0 +1,127 @@
+@import "compass/css3";
+@import "compass/support";
+
+body {
+  .tve_p_lb_background {
+    .tve_p_lb_content {
+      padding: 0 !important;
+      border-radius: 0;
+      .tve_p_lb_inner {
+        padding: 0;
+      }
+      #tve_editor .tve_p_lb_control {
+        padding-top: 0;
+      }
+    }
+  }
+  p {
+    line-height: 1.5em;
+    margin-bottom: 20px;
+  }
+}
+
+.tve_p_lb_content {
+  h1 {
+    font-family: 'Raleway';
+    font-weight: 500;
+  }
+}
+
+.tve_p_lb_content {
+  .thrv_lead_generation {
+    &.thrv_lead_generation_vertical {
+      .tve_lead_generated_inputs_container {
+        .tve_submit_container {
+          margin: 0 auto;
+          width: 50%;
+        }
+      }
+    }
+    .tve_lg_input_container {
+      input[type="text"] {
+        @include box-shadow(2px 0px 10px 0px rgba(#000, .10) inset);
+        @include border-radius(0);
+        border: 1px solid #cccccc;
+        color: #333333;
+        font-family: 'Raleway';
+        font-size: 14px;
+        height: auto;
+        margin-bottom: 15px;
+        padding: 11px 10px;
+        &:hover {
+          border: 1px solid #f19281;
+        }
+        &:focus {
+          outline-color: #cccccc;
+          outline-width: 1px;
+          background-color: #f2f0f0;
+          border: 1px solid #cccccc;
+          @include box-shadow(0 3px 3px 1px #dcdada inset);
+        }
+      }
+    }
+  }
+}
+
+
+$color-pallete:
+'black' #323239 #27272c,
+'blue' #3ab2f0 #1589de,
+'green' #52DC35 #5be43e,
+'orange' #ffc300 #ffcc00,
+'purple' #8656c1 #934de9,
+'red' #d35b47 #b64b39,
+'teal' #45e4c8 #7CDECD,
+'white' #d8d8d8 #e2e1e1;
+@each $color in $color-pallete {
+  .tve_p_lb_content {
+    .thrv_wrapper {
+      &.thrv_lead_generation.tve_#{nth($color, 1)} {
+        button {
+          @include background-image(linear-gradient(nth($color, 2) 0%, nth($color, 3) 100%));
+        }
+      }
+    }
+  }
+}
+.tve_p_lb_content {
+  .thrv_wrapper {
+    .thrv_lead_generation_container {
+      .tve_submit_container {
+        button {
+          @include border-radius(40px);
+          @include box-shadow(0px 1px 0px 0px rgba(#fff, .15) inset, 0px 2px 3px 0px rgba(#000, .43));
+          border: 1px solid #000;
+          font-family: 'Raleway';
+          font-size: 18px;
+          padding: 15px;
+          text-transform: none;
+          width: 100%;
+          &:hover {
+            background: #d35b47;
+            @include background-image(linear-gradient(#d35b47 0%, #b64b39 100%));
+            @include box-shadow(0px 1px 0px 0px rgba(#fff, .15) inset, 0px 2px 3px 0px rgba(#5b2323, .43));
+            border-color: rgba(#5e2625, .82);
+          }
+          &:active {
+            @include background-image(linear-gradient(#b74330 0%, #a44535 100%));
+            @include box-shadow(0px 1px 0px 0px rgba(#fff, .15) inset, 0px 2px 3px 0px rgba(#5b2323, .43));
+            border-color: rgba(#5e2625, .82);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@media only screen and (max-width: 774px) {
+  body .tve_p_lb_background .tve_p_lb_content {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .thrv_lead_generation_container {
+    padding: 0 10px;
+  }
+}

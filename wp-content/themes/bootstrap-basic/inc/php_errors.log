@@ -1,0 +1,66 @@
+[20-Oct-2014 10:50:51 UTC] TimThumb Debug line 1149 [0.000038 : 0.000000]: Starting new request from 127.0.0.1 to /wp-content/themes/bootstrap-basic/inc/thumb.php?zc=1&w=230&h=150&src=http://voedingleeft.local/wp-content/uploads/2014/10/Untitled-3.png
+[20-Oct-2014 10:50:51 UTC] TimThumb Debug line 1149 [0.118321 : 0.118285]: File tracking last clean doesn't exist. Creating ./cache/timthumb_cacheLastCleanTime.touch
+[20-Oct-2014 10:50:51 UTC] TimThumb Debug line 1149 [0.134063 : 0.015750]: Local image path is /Users/eveline/Sites/voedingleeft/wp-content/uploads/2014/10/Untitled-3.png
+[20-Oct-2014 10:51:10 UTC] TimThumb Debug line 1149 [0.000038 : 0.000000]: Starting new request from 127.0.0.1 to /wp-content/themes/bootstrap-basic/inc/thumb.php?zc=1&w=230&h=150&src=http://voedingleeft.local/wp-content/uploads/2014/10/Untitled-3-150x150.png
+[20-Oct-2014 10:51:10 UTC] TimThumb Debug line 1149 [0.016677 : 0.016640]: Local image path is /Users/eveline/Sites/voedingleeft/wp-content/uploads/2014/10/Untitled-3-150x150.png
+[20-Oct-2014 11:04:05 UTC] TimThumb Debug line 1149 [0.050513 : 0.000000]: Starting new request from 127.0.0.1 to /wp-content/themes/bootstrap-basic/inc/thumb.php?zc=1&w=230&h=150&src=http://voedingleeft.local/wp-content/uploads/2014/10/Untitled-3-150x150.png
+[20-Oct-2014 11:04:05 UTC] TimThumb Debug line 1149 [0.122864 : 0.072349]: Local image path is /Users/eveline/Sites/voedingleeft/wp-content/uploads/2014/10/Untitled-3-150x150.png
+[20-Oct-2014 11:04:05 UTC] TimThumb Debug line 1149 [0.154906 : 0.032038]: Returning 304 not modified
+[20-Oct-2014 11:07:27 UTC] TimThumb Debug line 1149 [0.000037 : 0.000000]: Starting new request from 127.0.0.1 to /wp-content/themes/bootstrap-basic/inc/thumb.php?zc=1&w=230&h=150&src=http://voedingleeft.local/wp-content/uploads/2014/10/Untitled-3-150x150.png
+[20-Oct-2014 11:07:28 UTC] TimThumb Debug line 1149 [0.179520 : 0.179486]: Local image path is /Users/eveline/Sites/voedingleeft/wp-content/uploads/2014/10/Untitled-3-150x150.png
+[20-Oct-2014 11:07:28 UTC] TimThumb Debug line 1149 [0.194846 : 0.015322]: Returning 304 not modified
+[20-Oct-2014 11:08:07 UTC] TimThumb Debug line 1149 [0.000044 : 0.000000]: Starting new request from 127.0.0.1 to /wp-content/themes/bootstrap-basic/inc/thumb.php?zc=1&w=230&h=150&src=http://voedingleeft.local/wp-content/uploads/2014/10/Untitled-3-150x150.png
+[20-Oct-2014 11:08:07 UTC] TimThumb Debug line 1149 [0.031558 : 0.031515]: Local image path is /Users/eveline/Sites/voedingleeft/wp-content/uploads/2014/10/Untitled-3-150x150.png
+[20-Oct-2014 11:08:07 UTC] TimThumb Debug line 1149 [0.032758 : 0.001193]: Returning 304 not modified
+[20-Oct-2014 11:08:20 UTC] TimThumb Debug line 1149 [0.000027 : 0.000000]: Starting new request from 127.0.0.1 to /wp-content/themes/bootstrap-basic/inc/thumb.php?zc=1&w=230&h=150&src=http://voedingleeft.local/wp-content/uploads/2014/10/Untitled-3-150x150.png
+[20-Oct-2014 11:08:20 UTC] TimThumb Debug line 1149 [0.026010 : 0.025990]: Local image path is /Users/eveline/Sites/voedingleeft/wp-content/uploads/2014/10/Untitled-3-150x150.png
+[20-Oct-2014 11:08:20 UTC] TimThumb Debug line 1149 [0.026229 : 0.000205]: Returning 304 not modified
+[20-Oct-2014 11:08:51 UTC] TimThumb Debug line 1149 [0.000053 : 0.000000]: Starting new request from 127.0.0.1 to /wp-content/themes/bootstrap-basic/inc/thumb.php?zc=1&w=230&h=150&src=http://voedingleeft.local/wp-content/uploads/2014/10/Untitled-3-150x150.png
+[20-Oct-2014 11:08:51 UTC] TimThumb Debug line 1149 [0.015168 : 0.015119]: Local image path is /Users/eveline/Sites/voedingleeft/wp-content/uploads/2014/10/Untitled-3-150x150.png
+[20-Oct-2014 11:08:51 UTC] TimThumb Debug line 1149 [0.116625 : 0.101444]: Returning 304 not modified
+[20-Oct-2014 11:09:30 UTC] TimThumb Debug line 1149 [0.000026 : 0.000000]: Starting new request from 127.0.0.1 to /wp-content/themes/bootstrap-basic/inc/thumb.php?zc=1&w=230&h=150&src=http://voedingleeft.local/wp-content/uploads/2014/10/Untitled-3-150x150.png
+[20-Oct-2014 11:09:30 UTC] TimThumb Debug line 1149 [0.036388 : 0.036364]: Local image path is /Users/eveline/Sites/voedingleeft/wp-content/uploads/2014/10/Untitled-3-150x150.png
+[20-Oct-2014 11:09:30 UTC] TimThumb Debug line 1149 [0.081494 : 0.045102]: Returning 304 not modified
+[20-Oct-2014 11:09:58 UTC] TimThumb Debug line 1149 [0.000068 : 0.000000]: Starting new request from 127.0.0.1 to /wp-content/themes/bootstrap-basic/inc/thumb.php?zc=1&w=230&h=150&src=http://voedingleeft.local/wp-content/uploads/2014/10/Untitled-3-150x150.png
+[20-Oct-2014 11:09:58 UTC] TimThumb Debug line 1149 [0.040712 : 0.040640]: Local image path is /Users/eveline/Sites/voedingleeft/wp-content/uploads/2014/10/Untitled-3-150x150.png
+[20-Oct-2014 11:09:58 UTC] TimThumb Debug line 1149 [0.040994 : 0.000277]: Returning 304 not modified
+[20-Oct-2014 11:10:19 UTC] TimThumb Debug line 1149 [0.000029 : 0.000000]: Starting new request from 127.0.0.1 to /wp-content/themes/bootstrap-basic/inc/thumb.php?zc=1&w=230&h=150&src=http://voedingleeft.local/wp-content/uploads/2014/10/Untitled-3-150x150.png
+[20-Oct-2014 11:10:19 UTC] TimThumb Debug line 1149 [0.070880 : 0.070852]: Local image path is /Users/eveline/Sites/voedingleeft/wp-content/uploads/2014/10/Untitled-3-150x150.png
+[20-Oct-2014 11:10:19 UTC] TimThumb Debug line 1149 [0.081864 : 0.010992]: Returning 304 not modified
+[20-Oct-2014 11:10:53 UTC] TimThumb Debug line 1149 [0.000035 : 0.000000]: Starting new request from 127.0.0.1 to /wp-content/themes/bootstrap-basic/inc/thumb.php?zc=1&w=230&h=150&src=http://voedingleeft.local/wp-content/uploads/2014/10/Untitled-3-150x150.png
+[20-Oct-2014 11:10:53 UTC] TimThumb Debug line 1149 [0.036568 : 0.036539]: Local image path is /Users/eveline/Sites/voedingleeft/wp-content/uploads/2014/10/Untitled-3-150x150.png
+[20-Oct-2014 11:10:53 UTC] TimThumb Debug line 1149 [0.065334 : 0.028759]: Returning 304 not modified
+[20-Oct-2014 11:11:19 UTC] TimThumb Debug line 1149 [0.000028 : 0.000000]: Starting new request from 127.0.0.1 to /wp-content/themes/bootstrap-basic/inc/thumb.php?zc=1&w=230&h=150&src=http://voedingleeft.local/wp-content/uploads/2014/10/Untitled-3-150x150.png
+[20-Oct-2014 11:11:19 UTC] TimThumb Debug line 1149 [0.084821 : 0.084798]: Local image path is /Users/eveline/Sites/voedingleeft/wp-content/uploads/2014/10/Untitled-3-150x150.png
+[20-Oct-2014 11:11:19 UTC] TimThumb Debug line 1149 [0.100482 : 0.015652]: Returning 304 not modified
+[20-Oct-2014 12:08:04 UTC] TimThumb Debug line 1149 [0.000029 : 0.000000]: Starting new request from 127.0.0.1 to /wp-content/themes/bootstrap-basic/inc/thumb.php?zc=1&w=230&h=150&src=http://professionals.voedingleeft.local/wp-content/uploads/sites/2/2014/10/Untitled-3.png
+[20-Oct-2014 12:08:05 UTC] TimThumb Debug line 1149 [0.047714 : 0.047689]: Local image path is /Users/eveline/Sites/voedingleeft/wp-content/uploads/sites/2/2014/10/Untitled-3.png
+[28-Oct-2014 13:55:19 UTC] TimThumb Debug line 1149 [0.045055 : 0.000000]: Starting new request from 127.0.0.1 to /wp-content/themes/bootstrap-basic/inc/thumb.php?zc=1&w=230&h=150&src=http://voedingleeft.local/wp-content/uploads/2014/10/Untitled-3-150x150.png
+[28-Oct-2014 13:55:19 UTC] TimThumb Debug line 1149 [0.119259 : 0.074178]: Cache was last cleaned more than 86400 seconds ago. Cleaning now.
+[28-Oct-2014 13:55:19 UTC] TimThumb Debug line 1149 [0.156237 : 0.036982]: Local image path is /Users/eveline/Sites/voedingleeft/wp-content/uploads/2014/10/Untitled-3-150x150.png
+[28-Oct-2014 13:55:22 UTC] TimThumb Debug line 1149 [0.000050 : 0.000000]: Starting new request from 127.0.0.1 to /wp-content/themes/bootstrap-basic/inc/thumb.php?zc=1&w=230&h=150&src=http://voedingleeft.local/wp-content/uploads/2014/10/Untitled-3.png
+[28-Oct-2014 13:55:22 UTC] TimThumb Debug line 1149 [0.015959 : 0.015909]: Local image path is /Users/eveline/Sites/voedingleeft/wp-content/uploads/2014/10/Untitled-3.png
+[28-Oct-2014 14:11:54 UTC] TimThumb Debug line 1149 [0.040670 : 0.000000]: Starting new request from 127.0.0.1 to /wp-content/themes/bootstrap-basic/inc/thumb.php?zc=1&w=230&h=150&src=http://voedingleeft.local/wp-content/uploads/2014/10/Untitled-3.png
+[28-Oct-2014 14:11:54 UTC] TimThumb Debug line 1149 [0.165505 : 0.124837]: Local image path is /Users/eveline/Sites/voedingleeft/wp-content/uploads/2014/10/Untitled-3.png
+[28-Oct-2014 14:11:54 UTC] TimThumb Debug line 1149 [0.310836 : 0.145326]: Returning 304 not modified
+[28-Oct-2014 14:33:21 UTC] TimThumb Debug line 1149 [0.029291 : 0.000000]: Starting new request from 127.0.0.1 to /wp-content/themes/bootstrap-basic/inc/thumb.php?zc=1&w=230&h=150&src=http://voedingleeft.local/wp-content/uploads/2014/10/Untitled-3.png
+[28-Oct-2014 14:33:21 UTC] TimThumb Debug line 1149 [0.069840 : 0.040545]: Local image path is /Users/eveline/Sites/voedingleeft/wp-content/uploads/2014/10/Untitled-3.png
+[28-Oct-2014 14:33:21 UTC] TimThumb Debug line 1149 [0.076707 : 0.006855]: Returning 304 not modified
+[28-Oct-2014 14:34:11 UTC] TimThumb Debug line 1149 [0.000041 : 0.000000]: Starting new request from 127.0.0.1 to /wp-content/themes/bootstrap-basic/inc/thumb.php?zc=1&w=230&h=150&src=http://voedingleeft.local/wp-content/uploads/2014/10/Untitled-3.png
+[28-Oct-2014 14:34:11 UTC] TimThumb Debug line 1149 [0.032148 : 0.032106]: Local image path is /Users/eveline/Sites/voedingleeft/wp-content/uploads/2014/10/Untitled-3.png
+[28-Oct-2014 14:34:11 UTC] TimThumb Debug line 1149 [0.047436 : 0.015289]: Returning 304 not modified
+[28-Oct-2014 14:34:42 UTC] TimThumb Debug line 1149 [0.339171 : 0.000000]: Starting new request from 127.0.0.1 to /wp-content/themes/bootstrap-basic/inc/thumb.php?zc=1&w=230&h=150&src=http://voedingleeft.local/wp-content/uploads/2014/10/Untitled-3.png
+[28-Oct-2014 14:34:42 UTC] TimThumb Debug line 1149 [0.348240 : 0.009062]: Local image path is /Users/eveline/Sites/voedingleeft/wp-content/uploads/2014/10/Untitled-3.png
+[28-Oct-2014 14:34:42 UTC] TimThumb Debug line 1149 [0.348397 : 0.000151]: Returning 304 not modified
+[28-Oct-2014 14:41:07 UTC] TimThumb Debug line 1149 [0.033059 : 0.000000]: Starting new request from 127.0.0.1 to /wp-content/themes/bootstrap-basic/inc/thumb.php?zc=1&w=230&h=150&src=http://voedingleeft.local/wp-content/uploads/2014/10/Untitled-3.png
+[28-Oct-2014 14:41:07 UTC] TimThumb Debug line 1149 [0.042116 : 0.009057]: Local image path is /Users/eveline/Sites/voedingleeft/wp-content/uploads/2014/10/Untitled-3.png
+[28-Oct-2014 14:41:07 UTC] TimThumb Debug line 1149 [0.042346 : 0.000219]: Returning 304 not modified
+[28-Oct-2014 14:41:38 UTC] TimThumb Debug line 1149 [0.000409 : 0.000000]: Starting new request from 127.0.0.1 to /wp-content/themes/bootstrap-basic/inc/thumb.php?zc=1&w=230&h=150&src=http://voedingleeft.local/wp-content/uploads/2014/10/Untitled-3.png
+[28-Oct-2014 14:41:38 UTC] TimThumb Debug line 1149 [0.055653 : 0.055245]: Local image path is /Users/eveline/Sites/voedingleeft/wp-content/uploads/2014/10/Untitled-3.png
+[28-Oct-2014 14:41:38 UTC] TimThumb Debug line 1149 [0.087139 : 0.031495]: Returning 304 not modified
+[28-Oct-2014 14:42:13 UTC] TimThumb Debug line 1149 [0.000402 : 0.000000]: Starting new request from 127.0.0.1 to /wp-content/themes/bootstrap-basic/inc/thumb.php?zc=1&w=230&h=150&src=http://voedingleeft.local/wp-content/uploads/2014/10/Untitled-3.png
+[28-Oct-2014 14:42:13 UTC] TimThumb Debug line 1149 [0.010889 : 0.010486]: Local image path is /Users/eveline/Sites/voedingleeft/wp-content/uploads/2014/10/Untitled-3.png
+[28-Oct-2014 14:42:13 UTC] TimThumb Debug line 1149 [0.011035 : 0.000139]: Returning 304 not modified
+[28-Oct-2014 14:43:01 UTC] TimThumb Debug line 1149 [0.000025 : 0.000000]: Starting new request from 127.0.0.1 to /wp-content/themes/bootstrap-basic/inc/thumb.php?zc=1&w=230&h=150&src=http://voedingleeft.local/wp-content/uploads/2014/10/Untitled-3.png
+[28-Oct-2014 14:43:01 UTC] TimThumb Debug line 1149 [0.071803 : 0.071779]: Local image path is /Users/eveline/Sites/voedingleeft/wp-content/uploads/2014/10/Untitled-3.png
+[28-Oct-2014 14:43:01 UTC] TimThumb Debug line 1149 [0.087668 : 0.015870]: Returning 304 not modified

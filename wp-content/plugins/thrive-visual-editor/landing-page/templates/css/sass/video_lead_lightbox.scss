@@ -1,0 +1,118 @@
+@import "compass/css3";
+@import "compass/support";
+
+body {
+  .tve_p_lb_background {
+    &.tve_lb_opening, &.tve_lb_open {
+      .tve_p_lb_overlay {
+        opacity: .4;
+      }
+    }
+    .tve_p_lb_content {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+  h1 {
+    font-family: 'Roboto';
+  }
+  p {
+    line-height: 1.5em;
+    margin-bottom: 20px;
+  }
+}
+.tve_p_lb_content {
+  .thrv_lead_generation {
+    .tve_lg_input_container {
+      input[type="text"] {
+        @include box-shadow(inset 1px 2px 3px 0px rgba(#000, .15));
+        @include border-radius(0);
+        background-color: #e4e4e4;
+        border: 0;
+        color: #575757;
+        font-family: "Roboto";
+        font-size: 18px;
+        font-weight: 300;
+        height: auto;
+        margin-bottom: 23px;
+        padding: 18px 17px !important;
+        &:hover, &:active, &:focus {
+          outline: none;
+          border: 0;
+          background-color: #f7f7f7;
+          color: #828282;
+        }
+        font-style: normal;
+      }
+      &.tve_submit_container {
+        text-align: center;
+        button[type=submit] {
+          padding: 20px 80px;
+          @include border-radius(7px);
+          width: auto;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+    .tve_lg_input_container {
+      &.tve_submit_container {
+        button[type=submit] {
+          border: 0;
+          font-family: 'Roboto';
+          font-weight: bold;
+          font-size: 30px;
+          text-transform: none;
+          &:hover {
+            margin-bottom: 5px;
+          }
+          &:active {
+            @include box-shadow(none);
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+    &.tve_orange {
+      .tve_submit_container {
+        button[type="submit"] {
+          color: #FFFFFF;
+          @include text-shadow(1px 1px 1px #bf9137);
+        }
+      }
+    }
+  }
+}
+
+
+$color-pallete: 'black' #333333 #3d3d3d #181818 #3d3c3c #292929 #151515,
+'blue' #3ab2f0 #1589de #2e4f8a #6495ea #2754a4 #22447f,
+'green' #52DC35 #5be43e #2e943c #40c551 #4da859 #127a20,
+'orange' #ffd02c #ffcc00 #d2a000 #fad232 #ebb503 #c09300,
+'purple' #8656c1 #934de9 #694398 #b274ff #603595 #451c79,
+'red' #ce271b #e03f34 #ce180b #ee3528 #c61407 #ff1100,
+'teal' #45e4c8 #7CDECD #306d62 #45e4c8 #399787 #0e7361,
+'white' #d8d8d8 #e2e1e1 #959595 #e0dede #959595 #6f6f6f;
+
+@each $color in $color-pallete {
+  .thrv_lead_generation.tve_#{nth($color, 1)} {
+    .tve_lg_input_container {
+      &.tve_submit_container {
+        button[type="submit"] {
+          background-color: nth($color, 2);
+          @include box-shadow(0 5px nth($color, 7));
+          @include background-image(linear-gradient(nth($color, 2) 0%, nth($color, 3) 100%));
+          &:hover {
+            background-color: nth($color, 3);
+            @include background-image(linear-gradient(nth($color, 3) 0%, nth($color, 2) 100%));
+          }
+          &:active {
+            background: nth($color, 7);
+          }
+        }
+      }
+    }
+  }
+}
+
+@import "_responsive";

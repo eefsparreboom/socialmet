@@ -1,0 +1,96 @@
+@import "compass/css3";
+@import "compass/support";
+
+$color-pallete: 'black' #333333 #3d3d3d #181818 #3d3c3c #292929 #151515,
+'blue' #3e68b2 #5885d5 #2e4f8a #6495ea #2754a4 #22447f,
+'green' #34ae44 #20e73a #2e943c #40c551 #4da859 #127a20,
+'orange' #f3a600 #ffd051 #d2a000 #f5b62e #ffc62b #ba7a14,
+'purple' #8656c1 #934de9 #694398 #b274ff #603595 #451c79,
+'red' #ce271b #e03f34 #ce180b #ee3528 #c61407 #ff1100,
+'teal' #387d71 #58b9a8 #306d62 #45e4c8 #399787 #0e7361,
+'white' #d8d8d8 #e2e1e1 #959595 #e0dede #959595 #6f6f6f;
+body {
+  h1 {
+    font-family: 'Lato';
+    font-weight: 700;
+  }
+  .tve_p_lb_background {
+    .tve_p_lb_content {
+      @include border-radius(0);
+      .thrv_lead_generation {
+        input[type="text"] {
+          @include border-radius(5px);
+          border: 3px solid #e9e9e9;
+          background: none;
+          color: #9d9d9d;
+          font-family: 'Lato';
+          height: auto;
+          margin-top: 0;
+          margin-bottom: 5px;
+          padding: 10px;
+          font-size: 22px;
+          &:hover {
+            @include box-shadow(none);
+            border-color: #d8d8d8;
+          }
+          &:active, &:focus {
+            @include box-shadow(none);
+            border-color: #8bce88;
+          }
+        }
+        button {
+          @include background-image(none);
+          @include border-radius(10px);
+          border: 0;
+          display: block;
+          font-size: 30px;
+          font-family: 'Lato';
+          font-weight: 700;
+          margin: 0 auto;
+          text-transform: none;
+          padding: 25px;
+          width: 80%;
+        }
+      }
+    }
+  }
+  p {
+    line-height: 1.5em;
+    margin-bottom: 20px;
+  }
+}
+
+@each $color in $color-pallete {
+  .tve_p_lb_background {
+    .tve_p_lb_content {
+      .thrv_lead_generation.tve_#{nth($color, 1)} {
+        .thrv_lead_generation_container {
+          button {
+            @include text-shadow(0 1px 0 nth($color, 7));
+            @include box-shadow(0 5px 0 nth($color, 2));
+            background-color: nth($color, 6);
+            &:hover {
+              @include box-shadow(0 5px 0 0 nth($color, 5));
+              @include text-shadow(0 1px 0 nth($color, 7));
+              background: nth($color, 3);
+            }
+            &:active {
+              @include text-shadow(0 1px 0 nth($color, 7));
+              background: nth($color, 2);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#tve_editor {
+  .thrv_lead_generation {
+    button {
+      display: table;
+      margin: 0 auto;
+      width: 80%;
+    }
+  }
+}

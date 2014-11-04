@@ -1,0 +1,112 @@
+@import "compass/css3";
+@import "compass/support";
+@import "_common";
+
+$color-pallete: 'black' #333333 #3d3d3d #181818 #3d3c3c #292929 #151515,
+'blue' #3f86ae #73bfeb #2e4f8a #46a0d3 #2754a4 #285f7e,
+'green' #34ae44 #20e73a #2e943c #40c551 #4da859 #127a20,
+'orange' #ffc300 #ffcc00 #d2a000 #fad232 #ebb503 #c09300,
+'purple' #8656c1 #934de9 #694398 #b274ff #603595 #451c79,
+'red' #ce271b #e03f34 #ce180b #ee3528 #c61407 #ff1100,
+'teal' #387d71 #58b9a8 #306d62 #45e4c8 #399787 #0e7361,
+'white' #d8d8d8 #e2e1e1 #959595 #e0dede #959595 #6f6f6f;
+
+body {
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  &.tve_lp {
+    background-color: #000;
+    background-image: url("./images/lead_generation_image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.tve_wrap_all {
+  margin-top: 10%;
+  h1, h2, h3, h4, h5, h6, p, blockquote, a, address, pre, blockquote, span, ul, li {
+    font-family: 'Roboto';
+    font-weight: 300;
+  }
+  .tve_lp_content {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 10px;
+    > h1, > p, > input {
+      color: #fff;
+      @include text-shadow(1px 1px 1px rgba(#000, 0.30));
+    }
+  }
+  a, a:hover {
+    color: inherit;
+  }
+  .bold_text {
+    font-weight: 900;
+  }
+
+  .tve_lp_lead_generation_image {
+    .thrv_lead_generation {
+      input[type='text'] {
+        @include input-placeholder {
+          color: #ffffff;
+        }
+        font-family: 'Roboto';
+        border-width: 1px;
+        border-color: rgba(#000, .70);
+        background-color: rgba(#000, .35);
+        @include border-radius(3px);
+        @include box-shadow(0 2px 0 0 rgba(#fff, .19));
+        font-size: 26px;
+        font-style: normal;
+        color: #fff;
+        height: auto;
+        font-weight: 300;
+        margin-bottom: 30px;
+        padding: 10px;
+        &:focus, &:active, &:hover {
+          outline-color: rgba(#000, .70);
+          outline-width: 0;
+          background-color: rgba(#000, .50);
+          border-width: 1px;
+          border-color: rgba(#000, .70);
+        }
+      }
+      .tve_submit_container {
+        button {
+          @include text-shadow(0 2px 4px rgba(#000, 0.42));
+          @include box-shadow(0 1px 2px 0 rgba(#fff, 1) inset, 0 2px 2px 0 rgba(#000, .34));
+          @include background-image(none);
+          font-family: 'Roboto';
+          font-weight: 900;
+          font-size: 26px;
+          padding: 10px;
+          &:active {
+            @include box-shadow(0 2px 2px 0 rgba(#000, .34));
+          }
+        }
+      }
+    }
+  }
+}
+
+@each $color in $color-pallete {
+  .tve_lp_lead_generation_image {
+    .thrv_lead_generation.tve_#{nth($color, 1)} {
+      .tve_submit_container {
+        button {
+          border: 1px solid nth($color, 7);
+          background-color: nth($color, 5);
+          &:hover {
+            background-color: nth($color, 3);
+          }
+          &:active {
+            background-color: nth($color, 1);
+          }
+        }
+      }
+    }
+  }
+}

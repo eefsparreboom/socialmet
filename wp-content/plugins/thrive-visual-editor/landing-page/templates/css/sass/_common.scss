@@ -1,0 +1,134 @@
+/* override some of the Thrive Themes stuff */
+
+/* it works only for chrome */
+@mixin input-placeholder {
+  &.placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+}
+
+html {
+  background: none !important;
+  min-height: 100% !important;
+  min-width: 0 !important;
+  height: auto !important;
+  overflow-x: hidden;
+  &.tve-html-editor {
+    overflow-x: visible !important;
+  }
+}
+
+#tcb_landing_page {
+  .float-left {
+    float: left;
+  }
+  .float-right {
+    float: right;
+  }
+}
+
+.aligncenter {
+  display: block;
+  margin: 10px auto;
+}
+
+body {
+  line-height: normal !important;
+  letter-spacing: normal;
+  margin: 0;
+  overflow-x: hidden !important;
+
+  .tve_post_lp {
+    min-width: 285px;
+    .pddbg.in {
+      max-width: 100vw !important;
+    }
+  }
+  .wrp {
+    width: auto;
+  }
+  .tve_wrap_all {
+    background-size: cover;
+    padding: 0 0 10px 0;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1em;
+    letter-spacing: normal;
+  }
+  p {
+    letter-spacing: normal;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+  }
+  .wp-caption {
+    border: 0;
+    background: none;
+    img {
+      margin-bottom: 0;
+    }
+  }
+  div {
+    .wp-caption {
+      border: 0;
+    }
+  }
+  .darkSec {
+    h1, h2, h3, h4, h5, h6, a, ul, ol, p {
+      color: #333;
+    }
+    p span {
+      color: inherit;
+    }
+  }
+  .lightSec {
+    h1, h2, h3, h4, h5, h6, a, ul, ol, p {
+      color: #fff;
+    }
+    p span {
+      color: inherit;
+    }
+  }
+}
+
+.darkSec, .lightSec {
+  font {
+    span {
+      color: inherit;
+    }
+  }
+}
+
+.tve_lp_content, .tve_lp_header, .tve_lp_footer {
+  @include clearfix();
+}
+
+#tcb_landing_page {
+  .tve_shortcode_rendered {
+    .top, .bottom {
+      margin: 0;
+    }
+  }
+}

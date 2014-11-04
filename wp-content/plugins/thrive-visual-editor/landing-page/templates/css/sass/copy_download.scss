@@ -1,0 +1,439 @@
+@import "compass/css3";
+@import "compass/support";
+@import "_common";
+
+@mixin robotoslab {
+  font-family: 'Roboto Slab';
+}
+
+@mixin raleway {
+  font-family: 'Raleway';
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+}
+
+body {
+  a {
+    color: #000000;
+  }
+  &.tve_lp {
+    background-image: url("./images/sales_page_bg.jpg");
+    background-repeat: repeat;
+    min-height: 100%;
+  }
+  .tve_wrap_all {
+    padding-bottom: 0;
+    h1, h2, h4, h5, h6, blockquote, a, address, pre, ul, li {
+      @include robotoslab();
+    }
+    h3 {
+      @include raleway();
+    }
+  }
+  .tve_post_lp {
+    .tve_lp_content {
+      margin: 0 auto;
+      p {
+        @include robotoslab();
+      }
+      .out {
+        margin-left: -2500px;
+        margin-right: 0;
+        width: 6080px;
+      }
+    }
+    .tve_lp_footer {
+      p, a {
+        color: #666666;
+      }
+    }
+  }
+}
+
+.tve_post_lp {
+  .tve_lp_content {
+    .out {
+      .in {
+        &.pddbg {
+          .cck {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1080px;
+          }
+        }
+      }
+    }
+    &.tve_content_width {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1080px;
+    }
+    .thrv_page_section {
+      .out {
+        .in {
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 1080px;
+        }
+      }
+    }
+    h1 {
+      @include text-shadow(1px 0 4px rgba(#000, .34));
+    }
+    .tve_responsive_video_container {
+      @include box-shadow(0 0 27px 0 rgba(#000, .54));
+      border: 8px solid #fff;
+    }
+  }
+}
+
+.tve_post_lp {
+  h1 {
+    font-weight: 100;
+    .bold_text {
+      font-weight: 400;
+    }
+  }
+}
+
+.tve_post_lp {
+  h3 {
+    font-weight: 300;
+    .bold_text {
+      font-weight: 600;
+    }
+  }
+}
+
+.tve_lp {
+  #tve_editor {
+    ol.thrv_wrapper {
+      @include raleway();
+      counter-reset: ol-counter;
+      list-style-type: none;
+      li {
+        @include raleway();
+      }
+      > li {
+        padding-left: 50px !important;
+        position: relative;
+        &:before {
+          @include raleway();
+          @include border-radius(50%);
+          background: #a7c1ad;
+          color: #fff;
+          content: counter(ol-counter) "." !important;
+          counter-increment: ol-counter;
+          display: block;
+          height: 39px;
+          line-height: 35px;
+          font-family: 'Raleway';
+          font-size: 26px;
+          font-weight: 600;
+          position: absolute;
+          left: 0;
+          top: 0;
+          text-align: center;
+          width: 39px;
+        }
+      }
+    }
+  }
+}
+
+.tve_lp_copy_download {
+  .tve_lp_content {
+    .thrv_button_shortcode {
+      .tve_btn {
+        &.tve_bigBtn.tve_btn7 {
+          border-bottom: 0;
+          a {
+            @include text-shadow(none);
+            @include raleway();
+            color: #f8f8f8;
+            font-size: 30px;
+            font-weight: 500;
+            padding-top: 22px;
+            padding-bottom: 22px;
+            text-transform: uppercase;
+            > span {
+              color: inherit;
+            }
+          }
+        }
+        &.tve_btn7 {
+          @include border-radius(3px);
+          @include box-shadow(
+                  0 1px 1px 0 rgba(#000, .23),
+                  0 1px 0 0 rgba(#fff, .2) inset
+          );
+        }
+      }
+    }
+    .thrv_contentbox_shortcode {
+      .tve_cb {
+        &.tve_cb5 {
+          @include box-shadow(none);
+          border: 0;
+          &.tve_green {
+            background: #c9dcce;
+          }
+        }
+      }
+    }
+    .thrv_contentbox_shortcode {
+      .tve_cb {
+        &.tve_cb6 {
+          background: transparent;
+          border-style: dashed;
+          p, h1, h2, h3, h4, h5, h6, blockquote, address, ul, ol {
+            color: #666666;
+            @include text-shadow(none);
+          }
+        }
+      }
+    }
+    .tve_cb {
+      &.tve_cb6 {
+        @include box-shadow(none);
+        @include background-image(none);
+        border-width: 3px;
+        &.tve_green {
+          border-color: #c9dcce;
+        }
+      }
+    }
+    .tve_cb6 {
+      @include raleway();
+      h2 {
+        @include raleway();
+        font-weight: 500;
+      }
+      p {
+        @include raleway();
+        color: #000;
+      }
+    }
+  }
+}
+
+
+.tve_post_lp {
+  .tve_lp_content {
+    .tve_cb6 {
+      .bold_text {
+        font-weight: 600;
+      }
+      a {
+        @include raleway();
+        color: #000;
+        font-weight: 500;
+        text-decoration: underline;
+      }
+      p {
+        @include raleway();
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+$color-pallete: 'black' #616060 #757575 #525252 #777777 #535353,
+'blue' #10384c #154863 #0e3244 #355c6f #0e3345,
+'green' #346234 #3a753a #2a532a #517d51 #295329,
+'orange' #ea693d #ff7846 #ff5330 #ff7f5a #ce5431,
+'purple' #394763 #455779 #2f3c54 #596780 #303d55,
+'red' #ba2c35 #d93641 #c9252d #da4e57 #aa262e,
+'teal' #168572 #199681 #116858 #399686 #126b5b,
+'white' #b1afaf #bcbcbc #9f9f9f #d5d5d5 #8f8f8f;
+
+@each $color in $color-pallete {
+  .tve_ts-copy.tve_#{nth($color, 1)} {
+    .tve_ts_copy-aut {
+      b {
+        color: nth($color, 3);
+      }
+    }
+  }
+  .thrv_button_shortcode {
+    .tve_btn {
+      &.tve_btn7 {
+        &.tve_#{nth($color, 1)} {
+          @include background-image(linear-gradient(nth($color, 3) 0%, nth($color, 4) 100%));
+          border: 1px solid nth($color, 2);
+          &:hover {
+            background: nth($color, 5);
+          }
+          &:active {
+            background: nth($color, 6);
+          }
+        }
+      }
+    }
+  }
+}
+
+.thrv_button_shortcode {
+  .tve_btn {
+    &.tve_btn7 {
+      &.tve_white {
+        &:active, &:focus {
+          a.tve_btnLink {
+            color: #f8f8f8;
+          }
+        }
+        &:hover {
+          a.tve_btnLink {
+            color: #333333;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tve_copydownload_cb {
+  .tve_cb_cnt {
+    position: relative;
+    &:before, &:after {
+      @include box-shadow(1px 1px 14px 4px rgba(#000, .5));
+      @include transform(rotate(5deg));
+      border: 0;
+      content: "";
+      position: absolute;
+      left: 11px;
+      bottom: 0px;
+      width: 20%;
+      z-index: -1;
+    }
+    &:after {
+      @include transform(rotate(-5deg));
+      right: 11px;
+      left: auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 774px) {
+  .tve_lp_content {
+    .tve_btn.tve_bigBtn {
+      min-width: 100px;
+      width: 100%;
+      a {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    }
+  }
+}
+
+
+/*
+  default styles
+*/
+
+.tve_lp_copy_sales_page {
+  .tve_lp_content {
+    h1, h2, h3, h4, h5, h6 {
+      color: #333333;
+    }
+    h1 {
+      font-size: 52px;
+    }
+    h2 {
+      font-size: 42px;
+      font-weight: 400;
+    }
+    h3 {
+      font-size: 32px;
+      font-weight: 400;
+    }
+    h4 {
+      font-size: 26px;
+      font-weight: 400;
+    }
+    h5 {
+      font-size: 24px;
+      font-weight: 400;
+    }
+    h6 {
+      font-size: 18px;
+      font-weight: 400;
+    }
+    p {
+      font-size: 18px;
+    }
+    table {
+      thead {
+        .tve_table_row {
+          border-bottom: 10px solid #cadcce;
+        }
+      }
+      tbody {
+        td {
+          @include raleway();
+          border: 1px solid #e1e6e7!important;
+          color: #333333;
+          font-weight: 300;
+        }
+      }
+      .tve_table_row{
+        th {
+          padding: 15px;
+        }
+      }
+      th {
+        background: #d32f39;
+        color: #fff;
+        text-align: left;
+        p {
+          color: #fff;
+          font-weight: 700;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  blockquote {
+    @include raleway();
+    border: 2px dashed #cadcce;
+    background: transparent;
+    color: #333333;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: italic;
+    margin: 25px 0;
+  }
+  pre {
+    @include raleway();
+    background: #cadcce;
+    color: #403e3e;
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .tve_lp_copy_download .tve_lp_content .in {
+    padding: 50px 0px;
+  }
+  .tve_copydownload_cb .tve_cb_cnt {
+    padding: 20px 0!important;
+  }
+  .tve_cb6 {
+    margin-top: 0!important;
+  }
+  #tve_editor h1 {
+    margin-top: 20px!important;
+  }
+}
+@import "responsive";

@@ -1,0 +1,132 @@
+@import "compass/css3";
+@import "compass/support";
+
+@mixin robotoslab {
+  font-family: 'Roboto Slab';
+}
+
+@mixin raleway {
+  font-family: 'Raleway';
+}
+
+$color-pallete: 'black' #616060 #757575 #525252 #777777 #535353,
+'blue' #10384c #154863 #0e3244 #355c6f #0e3345,
+'green' #346234 #3a753a #2a532a #517d51 #295329,
+'orange' #ea693d #ff7846 #ff5330 #ff7f5a #ce5431,
+'purple' #394763 #455779 #2f3c54 #596780 #303d55,
+'red' #ba2c35 #d93641 #c9252d #da4e57 #aa262e,
+'teal' #168572 #199681 #116858 #399686 #126b5b,
+'white' #b1afaf #bcbcbc #9f9f9f #d5d5d5 #8f8f8f;
+
+body {
+  .tve_p_lb_content {
+    .tve_p_lb_inner{
+      @include raleway();
+      p {
+        color: #666666;
+        font-weight: 300;
+      }
+      h1 {
+        @include robotoslab();
+        color: #333;
+        font-weight: 400;
+        font-size: 52px;
+      }
+    }
+  }
+  .tve_p_lb_background {
+    .tve_p_lb_content {
+      @include border-radius(5px);
+      padding: 60px 40px;
+    }
+  }
+  .tve_p_lb_inner {
+    .thrv_lead_generation {
+      input[type="text"] {
+        @include box-sizing(border-box);
+        @include box-shadow(0px 3px 7px 0 rgba(#000, .15) inset);
+        @include border-radius(5px);
+        @include raleway();
+        border: 1px solid #c9c9c9;
+        background: none;
+        color: #666666;
+        font-weight: 300;
+        font-size: 24px;
+        font-style: normal;
+        height: auto;
+        margin-top: 0;
+        margin-bottom: 12px;
+        padding: 25px 40px !important;
+        &:hover {
+          @include box-shadow(none);
+          @include background-image(linear-gradient(#f0f0f0 0%, #ffffff 100%));
+          border: 1px solid #a7a7a7;
+        }
+        &:active, &:focus {
+          @include box-shadow(none);
+          background: #fff;
+        }
+      }
+      .tve_lg_input_container {
+        button {
+          @include border-radius(3px);
+          @include box-shadow(
+                  0 1px 1px 0 rgba(#000, .23),
+                  0 1px 0 0 rgba(#fff, .2) inset
+          );
+          @include text-shadow(none);
+          @include robotoslab();
+          color: #f8f8f8;
+          font-size: 28px;
+          font-weight: 400;
+          padding-top: 22px;
+          padding-bottom: 22px;
+          &:hover, &:active, &:focus {
+            font-size: 28px;
+            font-weight: 400;
+            padding-top: 22px;
+            padding-bottom: 22px;
+          }
+        }
+      }
+    }
+  }
+  p {
+    line-height: 1.5em;
+    margin-bottom: 20px;
+  }
+}
+
+@each $color in $color-pallete {
+  .tve_p_lb_content {
+    .thrv_lead_generation.tve_#{nth($color, 1)} {
+      .thrv_lead_generation_container {
+        input[type="text"] {
+          &:focus {
+            border: 2px solid nth($color, 2);
+          }
+        }
+        button {
+          @include background-image(linear-gradient(nth($color, 3) 0%, nth($color, 4) 100%));
+          border: 1px solid nth($color, 2);
+          &:hover {
+            background: nth($color, 5);
+          }
+          &:active {
+            background: nth($color, 6);
+          }
+        }
+      }
+    }
+  }
+}
+
+#tve_editor {
+  .thrv_lead_generation {
+    button {
+      display: table;
+      margin: 0 auto;
+      width: 80%;
+    }
+  }
+}

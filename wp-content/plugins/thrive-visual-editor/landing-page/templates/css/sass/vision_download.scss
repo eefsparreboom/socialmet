@@ -1,0 +1,296 @@
+@import "compass/css3";
+@import "compass/support";
+@import "_common";
+@import "video_lead_lightbox";
+
+body {
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+.tve_wrap_all {
+  h1, h2, h3, h4, h5, h6, p, blockquote, a, address, pre, blockquote, span, ul, li {
+    font-family: 'Roboto';
+    font-weight: 300;
+  }
+  a, a:hover {
+    color: inherit;
+  }
+  .bold_text {
+    font-weight: 700;
+  }
+  .tve_normalBtn {
+    a {
+      color: #ffffff;
+      font-weight: bold;
+    }
+  }
+  p {
+    @include text-shadow(2px 0px 3px rgba(#000, .10));
+    font-size: 17px;
+  }
+  h1 {
+    margin-top: 33px;
+  }
+  h3 {
+    margin-top: 22px;
+  }
+}
+
+body {
+  &.tve_lp {
+    background-color: #476f80;
+  }
+  #tve_editor {
+    padding: 0 !important;
+  }
+  .tve_wrap_all {
+    padding: 0;
+  }
+  .tve_content_width, .thrv_page_section .out .in {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1080px;
+  }
+  .thrv_page_section {
+    .out {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .in {
+      @include box-sizing(border-box);
+      padding: 16px 0;
+    }
+  }
+  .tve_lp_content {
+    margin-top: 0;
+    margin-bottom: 0;
+    h1 {
+      @include text-shadow(2px 0px 3px rgba(#000, .10));
+      font-size: 45px;
+      font-weight: normal;
+      > span.bold_text {
+        color: #ffd02c;
+      }
+    }
+  }
+  h3 {
+    @include text-shadow(2px 0px 3px rgba(#000, .10));
+    font-size: 28px;
+  }
+  .darkSec {
+    a {
+      color: inherit;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+      span {
+        color: inherit;
+      }
+    }
+  }
+}
+
+.tve_colm {
+  iframe {
+    max-width: 100%;
+  }
+}
+
+.thrv_button_shortcode {
+  .tve_btn {
+    &.tve_btn5 {
+      @include border-radius(4px);
+      margin-bottom: 5px;
+      > a.tve_btnLink {
+        @include border-radius(4px);
+        padding: 10px 40px;
+        .tve_btn_im {
+          margin-left: 0;
+          i.tve_sc_icon {
+            min-width: 10px;
+          }
+        }
+        .tve_btn_txt {
+          font-weight: 700;
+        }
+        > div.tve_left {
+          border-right: 0;
+        }
+        &:active, &:focus {
+          outline: none;
+        }
+      }
+      &.tve_normalBtn {
+        a {
+          font-size: 24px;
+          line-height: 60px;
+        }
+      }
+    }
+  }
+}
+
+.thrv_button_shortcode {
+  .tve_btn {
+//    &.tve_btn5.tve_orange {
+//      background-color: rgb(255, 208, 44);
+//      @include filter-gradient(#ffd02c, #ffbc2c, vertical);
+//      @include background-image(linear-gradient(top, rgba(255, 208, 44, 1) 0%, rgba(255, 188, 44, 1) 100%));
+//      @include text-shadow(1px 1px 2px #bf9137);
+//      &:hover {
+//        @include filter-gradient(#ffbc2c, #ffd02c, vertical);
+//        @include background-image(linear-gradient(top, rgba(255, 188, 44, 1) 0%, rgba(255, 208, 44, 1) 100%));
+//      }
+//      a > span {
+//        color: #FFFFFF;
+//        @include text-shadow(1px 1px 1px #bf9137);
+//      }
+//    }
+  }
+}
+
+$color-pallete: 'black' #333333 #3d3d3d #181818 #3d3c3c #292929 #151515,
+'blue' #3e68b2 #5885d5 #2e4f8a #6495ea #2754a4 #22447f,
+'green' #34ae44 #20e73a #2e943c #40c551 #4da859 #127a20,
+'orange' #ffd02c #ffbc2c #bf9137 #f5b62e #ffc62b #ba7a14,
+'purple' #8656c1 #934de9 #694398 #b274ff #603595 #451c79,
+'red' #ce271b #e03f34 #ce180b #ee3528 #c61407 #ff1100,
+'teal' #387d71 #58b9a8 #306d62 #45e4c8 #399787 #0e7361,
+'white' #d8d8d8 #e2e1e1 #959595 #e0dede #959595 #6f6f6f;
+
+@each $color in $color-pallete {
+  .thrv_button_shortcode {
+    .tve_btn.tve_btn5.tve_#{nth($color, 1)} {
+      @include background-image(linear-gradient(nth($color, 2) 0%, nth($color, 3) 100%));
+      @include box-shadow(0 5px 0 0 nth($color, 4));
+      &:hover {
+        @include background-image(linear-gradient(nth($color, 3) 0%, nth($color, 2) 100%));
+      }
+      &:active {
+        @include background-image(none);
+        background: nth($color, 4);
+      }
+    }
+  }
+}
+
+//$color-pallete: 'black' darken(#595959, .8),
+//'blue' darken(#4E7AC7, .8),
+//'green' darken(#45BF55, .3),
+//'orange' #bf9137,
+//'purple' darken(#9768D1, .8),
+//'red' darken(#e93c31, .8),
+//'teal' darken(#008080, .8),
+//'white' darken(#efefef, .8);
+//
+//@each $color in $color-pallete {
+//  .thrv_button_shortcode {
+//    .tve_btn.tve_btn5.tve_#{nth($color, 1)} {
+//      @include box-shadow(0 5px nth($color, 2));
+//    }
+//  }
+//}
+
+.tve_lp_footer {
+  .out .in {
+    border-top: 1px solid #ffffff;
+  }
+  .thrv_wrapper p {
+    color: #7e7e7e;
+    margin: 10px 0;
+    font-size: 14px;
+  }
+}
+
+.tve_tth {
+  p {
+    max-width: 96%;
+  }
+}
+
+.thrv_responsive_video {
+  position: relative;
+  &:after {
+    content: '';
+    display: block;
+    height: 38px;
+    position: absolute;
+    bottom: -42px;
+    right: -16px;
+    width: 73px;
+  }
+}
+
+/* page sections */
+.tve_post_lp {
+  .tve_lp_content {
+    .out {
+      width: 6080px;
+      margin-left: -2500px;
+    }
+  }
+  .out {
+    .in {
+      &.pddbg {
+        .cck {
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 1080px;
+        }
+      }
+    }
+  }
+}
+
+.tve_lp_vision_download {
+  .tve_cb_shadow {
+    @include box-shadow(0px 4px 9px 0px rgba(#000, .10) inset);
+    .tve_cb {
+      @include box-shadow(none);
+      background: transparent;
+    }
+  }
+}
+
+
+@font-face {
+  font-family: 'tlp-icon-visiondownload';
+  src: url('fonts/vision_download/tlp-icon-visiondownload.eot?-o8i8n3');
+  src: url('fonts/vision_download/tlp-icon-visiondownload.eot?#iefix-o8i8n3') format('embedded-opentype'),
+  url('fonts/vision_download/tlp-icon-visiondownload.woff?-o8i8n3') format('woff'),
+  url('fonts/vision_download/tlp-icon-visiondownload.ttf?-o8i8n3') format('truetype'),
+  url('fonts/vision_download/tlp-icon-visiondownload.svg?-o8i8n3#tlp-icon-simpleflat') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="tve_icon-vision-download"], [class*=" tve_icon-vision-download"] {
+  font-family: 'tlp-icon-visiondownload' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.tve_icon-vision-download:before {
+  content: "\e600";
+}
+
+@media only screen and (max-width: 540px) {
+  .thrv_button_shortcode .tve_btn.tve_btn5 > a.tve_btnLink {
+    padding: 10px 15px !important;
+    .tve_btn_im {
+      display: none;
+    }
+  }
+}
+
+@import "_responsive";

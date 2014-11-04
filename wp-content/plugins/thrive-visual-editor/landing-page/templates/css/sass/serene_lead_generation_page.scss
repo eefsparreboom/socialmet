@@ -1,0 +1,219 @@
+@import "compass/css3";
+@import "compass/support";
+@import "_common";
+
+$color-pallete: 'black' #333333, 'blue' #3E68B2, 'green' #34AE44, 'orange' #E25C1B, 'purple' #8656C1, 'red' #CE271B, 'teal' #387D71, 'white' #fff;
+
+body {
+  &.tve_lp {
+    background: #fff;
+  }
+  .tve_wrap_all {
+    padding: 0;
+  }
+  a, a:hover {
+    color: inherit;
+  }
+  h1, h2, h3, h4, h5, h6, p, blockquote, a, address, pre, blockquote, ul, li {
+    color: #333333;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+  }
+  .bold_text {
+    font-weight: 600;
+  }
+  .tve_lp_serene_lead_generation_page {
+    .tve_lp_content {
+      .tve_btn1 {
+        @include border-radius(0);
+        @include text-shadow(none);
+        background: none;
+        background-image: none;
+        border-style: solid;
+        border-width: 2px;
+        font-size: 18px;
+        a {
+          @include text-shadow(none);
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+@each $color in $color-pallete {
+  .tve_lp_serene_lead_generation_page {
+    .tve_lp_content {
+      .tve_btn.tve_btn1.tve_#{nth($color, 1)} {
+        border-color: nth($color, 2);
+        color: nth($color, 2);
+        a {
+          color: nth($color, 2);
+        }
+      }
+    }
+  }
+}
+.tve_post_lp {
+  &.tve_lp_serene_lead_generation_page {
+    .thrv_lead_generation {
+      input[type="text"] {
+        @include border-radius(0);
+        @include box-shadow(none);
+        background: none;
+        border: 2px solid rgba(#000, .2);
+        color: #555;
+        font-family: 'Source Sans Pro';
+        font-size: 18px;
+        font-weight: 300;
+        font-style: normal;
+        line-height: normal;
+        height: auto;
+        margin-bottom: 20px;
+        padding: 10px;
+        &:hover {
+          background: rgba(#62331c, .02);
+          border: 2px solid rgba(#000, .35);
+        }
+        &:focus {
+          background-color: transparent;
+          @include background-image(linear-gradient(rgba(#000, .05) 0%, transparent 100%));
+          border: 2px solid #333333;
+        }
+      }
+      .tve_submit_container {
+        position: relative;
+        &.tve_lg_input_container {
+          button {
+            @include text-shadow(none);
+          }
+        }
+        button {
+          @include box-shadow(none);
+          @include border-radius(0);
+          @include background-image(none);
+          font-size: 18px;
+          font-weight: 600;
+          font-family: 'Source Sans Pro';
+          padding: 15px 0px 15px 25%;
+          position: relative;
+          text-align: left;
+          z-index: 1;
+          text-transform: uppercase;
+          &:active, &:focus {
+            @include box-shadow(none);
+          }
+        }
+        .thrv_icon {
+          display: 10px;
+          margin: auto 0;
+          padding: 0;
+          position: absolute;
+          top: 15px;
+          bottom: 0;
+          left: 15%;
+          z-index: 3;
+          span {
+            color: #fff;
+          }
+        }
+      }
+      &.tve_black {
+        .tve_submit_container {
+          button {
+            background-color: rgba(#333, .8);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* page sections */
+.tve_post_lp {
+  .tve_lp_header {
+    min-height: 30px;
+  }
+  .tve_lp_content {
+    .out {
+      width: 6080px;
+      margin-left: -2500px;
+    }
+  }
+  .out {
+    .in {
+      &.pddbg {
+        .cck {
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 1080px;
+        }
+      }
+    }
+  }
+  .tve_lp_header, .tve_lp_footer {
+    .out {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+.tve_content_width, .thrv_page_section .out .in {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1080px;
+}
+
+@font-face {
+  font-family: 'tlp-icon-sereneleadgeneration';
+  src: url('fonts/serene_lead_generation_page/tlp-icon-sereneleadgeneration.eot?-o8i8n3');
+  src: url('fonts/serene_lead_generation_page/tlp-icon-sereneleadgeneration.eot?#iefix-o8i8n3') format('embedded-opentype'),
+  url('fonts/serene_lead_generation_page/tlp-icon-sereneleadgeneration.woff?-o8i8n3') format('woff'),
+  url('fonts/serene_lead_generation_page/tlp-icon-sereneleadgeneration.ttf?-o8i8n3') format('truetype'),
+  url('fonts/serene_lead_generation_page/tlp-icon-sereneleadgeneration.svg?-o8i8n3#tlp-icon-simpleflat') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="serene-leadgeneration"], [class*=" serene-leadgeneration"] {
+  font-family: 'tlp-icon-sereneleadgeneration' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.serene-leadgeneration-download:before {
+  content: "\f0ed";
+}
+
+
+@media only screen and (max-width: 774px) {
+  .tve_twc {
+    .tve_image {
+      margin: 0 auto;
+      max-width: 200px!important;
+    }
+  }
+  .thrv_lead_generation .tve_lg_input_container.tve_submit_container button[type="submit"] {
+    padding-left: 25% !important;
+  }
+  .tve_lp_footer {
+    p {
+      line-height: 1.5em!important;
+      &.float-left, &.float-right {
+        float: none!important;
+        text-align: left;
+      }
+    }
+  }
+}
+@import "_responsive";

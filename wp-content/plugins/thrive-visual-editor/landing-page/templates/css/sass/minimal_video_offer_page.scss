@@ -1,0 +1,150 @@
+@import "compass/css3";
+@import "compass/support";
+@import "_common";
+@import "minimal_video_offer_page_lightbox";
+
+
+$color-pallete: 'black' #333333, 'blue' #3E68B2, 'green' #34AE44, 'orange' #E25C1B, 'purple' #8656C1, 'red' #CE271B, 'teal' #387D71, 'white' #D8D8D8;
+
+body {
+  &.tve_lp {
+    background: #fff;
+  }
+  .tve_wrap_all {
+    padding: 0;
+  }
+  a, a:hover {
+    color: inherit;
+  }
+  h1, h2, h3, h4, h5, h6, p, blockquote, a, address, pre, blockquote, ul, li {
+    color: #333333;
+    font-family: 'Roboto';
+    font-weight: 300;
+  }
+  .tve_special {
+    span {
+      position: relative;
+      &:before {
+        @include background-image(linear-gradient(right, #000 0%, transparent 100%));
+        content: '';
+        display: inline-block;
+        height: 1px;
+        margin-right: 20px;
+        vertical-align: middle;
+        width: 76px;
+      }
+      &:after {
+        @include background-image(linear-gradient(left, #000 0%, transparent 100%));
+        content: '';
+        display: inline-block;
+        height: 1px;
+        margin-left: 20px;
+        vertical-align: middle;
+        width: 76px;
+      }
+    }
+  }
+  .tve_lp_content {
+    .tve_btn.tve_btn1 {
+      @include box-shadow(none);
+      @include background-image(none);
+      @include border-radius(0);
+      @include text-shadow(none);
+      background: none;
+      border-style: solid;
+      border-width: 2px;
+      font-size: 18px;
+      &:hover {
+        @include background-image(none);
+        background: none;
+      }
+      a {
+        @include text-shadow(none);
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+@each $color in $color-pallete {
+  .tve_lp_content {
+    .tve_btn.tve_btn1.tve_#{nth($color, 1)} {
+      border-color: nth($color, 2);
+      color: nth($color, 2);
+      a {
+        color: nth($color, 2);
+        span {
+          color: nth($color, 2);
+        }
+      }
+    }
+  }
+}
+
+.tve_btn.tve_black a > span {
+  color: #343434;
+}
+
+.tve_lp_content {
+
+}
+
+/* page sections */
+.tve_post_lp {
+  .tve_lp_header {
+    min-height: 30px;
+  }
+  .tve_lp_content {
+    .out {
+      width: 6080px;
+      margin-left: -2500px;
+    }
+  }
+  .out {
+    .in {
+      &.pddbg {
+        .cck {
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 1080px;
+        }
+      }
+    }
+  }
+  .tve_lp_header, .tve_lp_footer {
+    .out {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+.tve_content_width, .thrv_page_section .out .in {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1080px;
+}
+
+@media only screen and (max-width: 774px) {
+  body {
+    .tve_special {
+      span {
+        &:before, &:after {
+          content: '';
+          display: none;
+        }
+      }
+    }
+    .tve_lp_footer {
+      p {
+        line-height: 1.5em!important;
+        &.float-left, &.float-right {
+          float: none!important;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+@import "_responsive";

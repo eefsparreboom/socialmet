@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /errors/
+Disallow: /usage/
+Crawl-delay: 600
+Request-rate: 1/600
+Visit-time: 0300-0700
+

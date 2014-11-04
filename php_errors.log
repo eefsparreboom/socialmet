@@ -1,0 +1,10 @@
+[04-Nov-2014 15:28:45 UTC] PHP Fatal error:  Call to undefined function wp_get_sites() in /Users/eveline/Sites/socialmet/wp-content/themes/bootstrap-basic/header.php on line 62
+[04-Nov-2014 15:28:45 UTC] PHP Stack trace:
+[04-Nov-2014 15:28:45 UTC] PHP   1. {main}() /Users/eveline/Sites/socialmet/index.php:0
+[04-Nov-2014 15:28:45 UTC] PHP   2. require() /Users/eveline/Sites/socialmet/index.php:17
+[04-Nov-2014 15:28:45 UTC] PHP   3. require_once() /Users/eveline/Sites/socialmet/wp-blog-header.php:16
+[04-Nov-2014 15:28:45 UTC] PHP   4. include() /Users/eveline/Sites/socialmet/wp-includes/template-loader.php:74
+[04-Nov-2014 15:28:45 UTC] PHP   5. get_header() /Users/eveline/Sites/socialmet/wp-content/themes/bootstrap-basic/index.php:8
+[04-Nov-2014 15:28:45 UTC] PHP   6. locate_template() /Users/eveline/Sites/socialmet/wp-includes/general-template.php:47
+[04-Nov-2014 15:28:45 UTC] PHP   7. load_template() /Users/eveline/Sites/socialmet/wp-includes/template.php:477
+[04-Nov-2014 15:28:45 UTC] PHP   8. require_once() /Users/eveline/Sites/socialmet/wp-includes/template.php:501

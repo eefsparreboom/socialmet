@@ -1,0 +1,120 @@
+@import "compass/css3";
+@import "compass/support";
+@import "_common";
+@import "_responsive";
+
+body {
+  p, h2, h3, h4, h5, h6, ul, ol, address, blockquote, a {
+    color: #666;
+  }
+  h1 {
+    color: #305584;
+  }
+  .tve_wrap_all {
+    h1, h2, h3, h4, h5, h6, p, blockquote, a, address, pre, blockquote, span, ul, li {
+      font-family: 'Lato';
+      font-weight: 400;
+    }
+    h1, h2 {
+      font-weight: 700;
+    }
+    h1.success {
+      background: #8bde85 url('./images/check.png') no-repeat 15px center;
+      @include border-radius(15px)
+    }
+    .bold_text {
+      font-weight: 700;
+    }
+    .tve_lp_flat_download {
+      .tve_btn {
+        &.tve_btn8 {
+          @include border-radius(10px);
+          @include background-image(none);
+        }
+        &.tve_green {
+          background-color: #89ec7f;
+          &:hover {
+            background-color: #80cd79;
+          }
+          &.tve_btn8 {
+            border-width: 0;
+            box-shadow: 0 5px 0 #80cd79;
+          }
+          a {
+            text-shadow: 0 1px 0 rgba(#76ac71, 1);
+            > span {
+              color: #FFFFFF;
+            }
+          }
+        }
+        &.tve_bigBtn {
+          a {
+            font-weight: 700;
+            padding: 20px;
+          }
+        }
+      }
+    }
+  }
+  &.tve_lp {
+    background-color: #fff;
+  }
+  .tve_content_width, .thrv_page_section .out .in {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1080px;
+  }
+  .tve_lp_content {
+    .tve_colm.tve_oth, .tve_colm.tve_thc {
+      @include box-sizing(border-box);
+      padding: 20px;
+      margin: 0 2% 20px 0;
+      width: 32%;
+      background-color: #eaeaea;
+      @include border-radius(15px);
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+  .tve_lp_footer {
+    a, p {
+      color: #6c6c6c;
+    }
+  }
+}
+
+@font-face {
+  font-family: 'flat_download_icomoon';
+  src:url('fonts/flat_download/flat_download_icomoon.eot?jt4lxw');
+  src:url('fonts/flat_download/flat_download_icomoon.eot?#iefixjt4lxw') format('embedded-opentype'),
+  url('fonts/flat_download/flat_download_icomoon.woff?jt4lxw') format('woff'),
+  url('fonts/flat_download/flat_download_icomoon.ttf?jt4lxw') format('truetype'),
+  url('fonts/flat_download/flat_download_icomoon.svg?jt4lxw#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="flat-download-icon"], [class*=" flat-download-icon"] {
+  font-family: 'flat_download_icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.flat-download-icon-download:before {
+  content: "\e61d";
+}
+
+@media only screen and (max-width: 540px) {
+  body .tve_wrap_all .tve_lp_flat_download .tve_btn.tve_bigBtn a {
+    padding: 10px 15px;
+  }
+}

@@ -1,0 +1,168 @@
+@import "compass/css3";
+@import "compass/support";
+@import "_common";
+
+$color-pallete: 'black' #333333 #3d3d3d #181818 #3d3c3c #292929 #151515,
+'blue' #3f86ae #73bfeb #2e4f8a #46a0d3 #2754a4 #285f7e,
+'green' #34ae44 #20e73a #2e943c #40c551 #4da859 #127a20,
+'orange' #ffc300 #ffcc00 #d2a000 #fad232 #ebb503 #c09300,
+'purple' #8656c1 #934de9 #694398 #b274ff #603595 #451c79,
+'red' #ce271b #e03f34 #ce180b #ee3528 #c61407 #ff1100,
+'teal' #387d71 #58b9a8 #306d62 #45e4c8 #399787 #0e7361,
+'white' #d8d8d8 #e2e1e1 #959595 #e0dede #959595 #6f6f6f;
+
+body {
+  min-height: 100%;
+  overflow-x: hidden;
+  &.tve_lp {
+    background-color: #000;
+    background-image: url("./images/lead_generation_image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.tve_wrap_all {
+  h1, h2, h3, h4, h5, h6, p, blockquote, a, address, pre, blockquote, span, ul, li {
+    font-family: 'Roboto';
+    font-weight: 300;
+  }
+  .tve_content_width, .thrv_page_section .out .in {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1080px;
+  }
+  h1, p, input {
+    color: #fff;
+    @include text-shadow(1px 1px 1px rgba(#000, 0.30));
+  }
+  .thrv_content_container_shortcode {
+  }
+  a, a:hover {
+    color: inherit;
+  }
+  .bold_text {
+    font-weight: 900;
+  }
+  .tve_lp_rockstar_download {
+    .thrv_button_shortcode {
+      .tve_btn1 {
+        @include box-sizing(border-box);
+        @include text-shadow(0 2px 4px rgba(#000, 0.42));
+        @include box-shadow(0 1px 2px 0 rgba(#fff, 1) inset, 0 2px 2px 0 rgba(#000, .34));
+        @include background-image(none);
+        font-family: 'Roboto';
+        font-weight: 900;
+        font-size: 26px;
+        padding: 10px;
+        &:active {
+          @include box-shadow(0 2px 2px 0 rgba(#000, .34));
+        }
+      }
+    }
+    .thrv_lead_generation {
+      input[type='text'] {
+        @include input-placeholder {
+          color: #ffffff;
+        }
+        font-family: 'Roboto';
+        border-width: 1px;
+        border-color: rgba(#000, .70);
+        background-color: rgba(#000, .35);
+        @include border-radius(3px);
+        @include box-shadow(0 2px 0 0 rgba(#fff, .19));
+        font-size: 26px;
+        color: #fff;
+        height: auto;
+        font-weight: 300;
+        margin-bottom: 30px;
+        padding: 10px;
+        &:focus, &:active {
+          outline-color: rgba(#000, .70);
+          outline-width: 0;
+          background-color: rgba(#000, .50);
+        }
+      }
+    }
+  }
+}
+
+/* page sections */
+.tve_post_lp {
+  .tve_lp_header {
+  }
+  .tve_lp_content {
+    .out {
+      width: 6080px;
+      margin-left: -2500px;
+    }
+  }
+  .out {
+    .in {
+      &.pddbg {
+        .cck {
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 1080px;
+        }
+      }
+    }
+  }
+  .tve_lp_header, .tve_lp_footer {
+    .out {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+@each $color in $color-pallete {
+  .tve_lp_rockstar_download {
+    .thrv_button_shortcode {
+      .tve_btn1.tve_#{nth($color, 1)} {
+        border: 1px solid nth($color, 7);
+        background-color: nth($color, 5);
+        &:hover {
+          background-color: nth($color, 3);
+        }
+        &:active {
+          background-color: nth($color, 1);
+        }
+      }
+    }
+  }
+}
+
+.tve_lp_rockstar_download {
+  .thrv_button_shortcode {
+    .tve_btn1.tve_white {
+      @include border-radius(4px);
+      @include box-shadow(0 1px 0px 0 rgba(#fff, .3) inset, 0 2px 2px 0 rgba(#000, .34));
+      background: rgba(#fff, .25);
+      border: 1px solid #285f7e;
+      a.tve_btnLink {
+        color: #fff;
+        font-weight: 700;
+        padding: 1px;
+        span {
+          color: #fff;
+          font-weight: 700;
+        }
+      }
+      &:hover {
+        background: rgba(#fff, .55);
+      }
+    }
+  }
+}
+@media only screen and (max-width: 540px) {
+  .thrv_content_container_shortcode {
+    .tve_content_inner {
+      margin-bottom: 0!important;
+    }
+  }
+  .tve_btn.tve_smallBtn a {
+    line-height: 1em;
+  }
+}
+@import "responsive";

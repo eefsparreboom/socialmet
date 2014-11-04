@@ -1,0 +1,206 @@
+@import "compass/css3";
+@import "compass/support";
+@import "_common";
+
+body {
+  .tve_wrap_all {
+    padding: 0;
+  }
+  &.tve_lp {
+    background-color: #2f2347;
+    background-image: url('./images/mini_squeeze_bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .tve_wrap_all {
+    width: 100%;
+  }
+  .tve_lp_content {
+    @include box-sizing(content-box);
+    @include border-radius(12px);
+    background: rgba(#000, .8);
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 45px;
+  }
+  .tve_post_lp {
+    .tve_lp_content {
+      .out {
+        margin-left: -45px;
+        margin-right: -45px;
+        width: auto;
+      }
+    }
+  }
+  h1, h2, h3, h4, h5, h6, p, blockquote, a, address, pre, blockquote, ul, li {
+    color: #fff;
+    font-family: 'Roboto';
+    font-weight: 300;
+  }
+  a, a:hover {
+    color: inherit;
+  }
+  h1 {
+    line-height: 1em;
+  }
+  p {
+    line-height: 1.2em;
+  }
+  .tve_lp_mini_squeeze_download {
+    .thrv_button_shortcode {
+      .tve_btn {
+        &.tve_btnBig.tve_btn7 {
+          @include border-radius(9px);
+          color: #fff;
+          font-family: 'Roboto';
+          font-weight: 700;
+          font-size: 30px;
+          padding: 23px 0;
+          a {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+
+$color-pallete: 'black' #333333 #3d3d3d #181818 #3d3c3c #292929 #151515,
+'blue' #3e68b2 #5885d5 #2e4f8a #6495ea #2754a4 #22447f,
+'green' #34ae44 #20e73a #2e943c #40c551 #4da859 #127a20,
+'orange' #ffc62b #f3a600 #d2a000 #ffd051 #f3a600 #ba7a14,
+'purple' #8656c1 #934de9 #694398 #b274ff #603595 #451c79,
+'red' #ce271b #e03f34 #ce180b #ee3528 #c61407 #ff1100,
+'teal' #387d71 #58b9a8 #306d62 #45e4c8 #399787 #0e7361,
+'white' #d8d8d8 #e2e1e1 #959595 #e0dede #959595 #6f6f6f;
+
+@each $color in $color-pallete {
+  .tve_lp_mini_squeeze_download {
+    .thrv_button_shortcode {
+      .tve_btn.tve_#{nth($color, 1)} {
+        &.tve_btnBig.tve_btn7 {
+          @include box-shadow(0 5px 0 0 nth($color, 3));
+          @include text-shadow(1px 0 0 nth($color, 7));
+          background: nth($color, 2);
+          &:hover {
+            background: nth($color, 5);
+          }
+          &:active {
+            background: nth($color, 6);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* page sections */
+.tve_post_lp {
+  .tve_lp_header {
+    min-height: 100px;
+  }
+  .tve_lp_content {
+    .out {
+      width: 6080px;
+      margin-left: -2500px;
+    }
+  }
+  .out {
+    .in {
+      &.pddbg {
+        .cck {
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 1080px;
+        }
+      }
+    }
+  }
+  .tve_lp_header, .tve_lp_footer {
+    .out {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+.thrv_page_section .out .in {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1080px;
+}
+
+.tve_cpanel_onpage {
+  li {
+    color: #626262;
+  }
+}
+
+#tve_landing_page_msg {
+  &.tve_warning {
+    p {
+      color: #8a6d3b;
+    }
+  }
+}
+
+#tve_landing_page_selector, #tve_lightbox_frame, #tve_cpanel {
+  p {
+    color: #000;
+  }
+  li {
+    color: #000;
+    &.tve_tS {
+      color: #fff;
+    }
+  }
+  .tve_scTC {
+    h5 {
+      color: #000;
+    }
+  }
+}
+
+@font-face {
+  font-family: 'tlp-icon-minisqueezedownload';
+  src: url('fonts/mini_squeeze_download/tlp-icon-minisqueezedownload.eot?-o8i8n3');
+  src: url('fonts/mini_squeeze_download/tlp-icon-minisqueezedownload.eot?#iefix-o8i8n3') format('embedded-opentype'),
+  url('fonts/mini_squeeze_download/tlp-icon-minisqueezedownload.woff?-o8i8n3') format('woff'),
+  url('fonts/mini_squeeze_download/tlp-icon-minisqueezedownload.ttf?-o8i8n3') format('truetype'),
+  url('fonts/mini_squeeze_download/tlp-icon-minisqueezedownload.svg?-o8i8n3#tlp-icon-simpleflat') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="mini-squeeze-download"], [class*=" mini-squeeze-download"] {
+  font-family: 'tlp-icon-minisqueezedownload' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mini-squeeze-download-icon:before {
+  content: "\e600";
+}
+
+@media only screen and (max-width: 774px) {
+  .tve_lp_content {
+    min-width: 70% !important;
+  }
+  .thrv_icon {
+    font-size: 180px!important;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .tve_post_lp .tve_lp_header {
+    min-height: 0px;
+  }
+}

@@ -1,0 +1,139 @@
+/*
+  responsive
+*/
+
+@media only screen and (max-width: 1080px) {
+  .tve_post_lp {
+    .tve_lp_content {
+      padding: 0px 20px;
+    }
+  }
+  .tve_lp_copy_sales_page.tve_post_lp {
+    .tve_lp_header {
+      .out {
+        width: 100%;
+        margin-left: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        &.pswr {
+          margin-left: 0;
+          padding-left: 0;
+          padding-right: 0;
+          .in.pddbg {
+            margin-left: -20px;
+            margin-right: -20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            height: 100% !important;
+          }
+        }
+      }
+    }
+  }
+  .tve_lp_template_wrapper:not(.tve_lp_blank) {
+    &.tve_post_lp {
+      .tve_lp_content {
+        .out {
+          width: 100%;
+          margin-left: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+          &.pswr {
+            margin-left: 0;
+            padding-left: 0;
+            padding-right: 0;
+            .in.pddbg {
+              margin-left: -20px;
+              margin-right: -20px;
+              padding-left: 20px;
+              padding-right: 20px;
+              height: 100% !important;
+            }
+          }
+        }
+      }
+      .tve_lp_header, .tve_lp_footer {
+        .out {
+          padding-left: 20px;
+          padding-right: 20px;
+          &.pswr {
+            padding-left: 0;
+            padding-right: 0;
+            .in.pddbg {
+              padding-left: 20px;
+              padding-right: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 940px) {
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 2) {
+  body .tve_post_lp {
+    .out .in.pddbg {
+      max-width: 1024px!important;
+      width: 1024px!important;
+    }
+  }
+}
+
+@media only screen and (max-width: 774px) {
+  #tve-p-scroller {
+    max-height: 420px !important;
+  }
+  .thrv_lead_generation {
+    .tve_lg_input_container.tve_submit_container {
+      button[type="submit"] {
+        padding: 20px;
+      }
+    }
+  }
+  .thrv_responsive_video {
+    position: relative;
+    &:after {
+      background: none;
+      display: none;
+    }
+  }
+  .tve_p_lb_close {
+    height: 40px !important;
+    line-height: 30px !important;
+    font-size: 30px !important;
+    width: 40px !important;
+  }
+  body .tve_p_lb_background .tve_p_lb_content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .tve_arr_btn:before {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .thrv_lead_generation {
+    .tve_lg_input_container.tve_submit_container {
+      button[type="submit"] {
+        font-size: 20px !important;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .tve_post_lp {
+    .tve_btn.tve_bigBtn {
+      min-width: 200px;
+    }
+  }
+}

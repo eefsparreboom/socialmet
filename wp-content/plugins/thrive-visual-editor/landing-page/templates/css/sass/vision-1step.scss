@@ -1,0 +1,224 @@
+@import "compass/css3";
+@import "compass/support";
+@import "_common";
+
+body {
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+.tve_wrap_all {
+  h1, h2, h3, h4, h5, h6, p, blockquote, a, address, pre, blockquote, span, ul, li {
+    font-family: 'Roboto';
+    font-weight: 300;
+  }
+  a, a:hover {
+    color: inherit;
+  }
+  .bold_text {
+    font-weight: 700;
+  }
+  .tve_normalBtn {
+    a {
+      color: #ffffff;
+      font-weight: bold;
+    }
+  }
+  p {
+    @include text-shadow(2px 0px 3px rgba(#000, .10));
+    font-size: 17px;
+  }
+  h1 {
+    margin-top: 33px;
+  }
+  h3 {
+    margin-top: 22px;
+  }
+}
+
+body {
+  &.tve_lp {
+    background-color: #476f80;
+  }
+  #tve_editor {
+    padding: 0 !important;
+  }
+  .tve_wrap_all {
+    padding: 0;
+  }
+  .tve_content_width, .thrv_page_section .out .in {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1080px;
+  }
+  .thrv_page_section {
+    .out {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .in {
+      @include box-sizing(border-box);
+      padding: 16px 0;
+    }
+  }
+  .tve_lp_content {
+    margin-top: 0;
+    margin-bottom: 0;
+    h1 {
+      @include text-shadow(2px 0px 3px rgba(#000, .10));
+      font-size: 45px;
+      font-weight: normal;
+      > span.bold_text {
+        color: #ffd02c;
+      }
+    }
+  }
+  h3 {
+    @include text-shadow(2px 0px 3px rgba(#000, .10));
+    font-size: 28px;
+  }
+  .darkSec {
+    p {
+      a {
+        color: inherit;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+        span {
+          color: inherit;
+        }
+      }
+    }
+  }
+}
+
+.tve_colm {
+  iframe {
+    max-width: 100%;
+  }
+}
+
+.tve_lp_vision-1step {
+  .thrv_lead_generation {
+    .tve_submit_container {
+      button[type="submit"] {
+        @include border-radius(4px);
+        font-size: 24px;
+        font-family: 'Roboto';
+        font-weight: 700;
+        line-height: 18px;
+        padding: 20px;
+        &:hover {
+          font-size: 24px;
+          font-family: 'Roboto';
+          font-weight: 700;
+          line-height: 18px;
+          padding: 20px;
+        }
+      }
+    }
+    .tve_lg_input_container {
+      input[type="text"] {
+        @include box-shadow(inset 1px 2px 3px 0px rgba(#000, .15));
+        @include border-radius(0);
+        background-color: #e4e4e4;
+        border: 0;
+        color: #575757;
+        font-family: "Roboto";
+        font-size: 18px;
+        font-weight: 300;
+        height: auto;
+        margin-bottom: 23px;
+        padding: 18px 17px !important;
+        &:hover, &:active, &:focus {
+          outline: none;
+          border: 0;
+          background-color: #f7f7f7;
+          color: #828282;
+        }
+        font-style: normal;
+      }
+    }
+    .tve_submit_container {
+      button[type="submit"] {
+        @include border-radius(4px);
+      }
+    }
+  }
+}
+
+
+$color-pallete:
+'black' #333333 #3d3d3d #181818 #3d3c3c #292929 #151515,
+'blue' #3e68b2 #5885d5 #2e4f8a #6495ea #2754a4 #22447f,
+'green' #34ae44 #20e73a #2e943c #40c551 #4da859 #127a20,
+'orange' #ffd02c #ffbc2c #bf9137 #f5b62e #ffc62b #ba7a14,
+'purple' #8656c1 #934de9 #694398 #b274ff #603595 #451c79,
+'red' #ce271b #e03f34 #ce180b #ee3528 #c61407 #ff1100,
+'teal' #387d71 #58b9a8 #306d62 #45e4c8 #399787 #0e7361,
+'white' #d8d8d8 #e2e1e1 #959595 #e0dede #959595 #6f6f6f;
+
+@each $color in $color-pallete {
+  .tve_lp_vision-1step {
+    .thrv_lead_generation.tve_#{nth($color, 1)} {
+      .thrv_lead_generation_container {
+        button[type="submit"] {
+          @include background-image(linear-gradient(nth($color, 2) 0%, nth($color, 3) 100%));
+          @include box-shadow(0 5px 0 0 nth($color, 4));
+          &:hover {
+            @include background-image(linear-gradient(nth($color, 3) 0%, nth($color, 2) 100%));
+          }
+          &:active {
+            @include background-image(none);
+            background: nth($color, 4);
+          }
+        }
+      }
+    }
+  }
+}
+
+.tve_lp_footer {
+  .out .in {
+    border-top: 1px solid #ffffff;
+  }
+  .thrv_wrapper p {
+    color: #7e7e7e;
+    margin: 10px 0;
+    font-size: 14px;
+  }
+}
+
+.tve_tth {
+  p {
+    max-width: 96%;
+  }
+}
+
+/* page sections */
+.tve_post_lp {
+  .tve_lp_content {
+    .out {
+      width: 6080px;
+      margin-left: -2500px;
+    }
+  }
+  .out {
+    .in {
+      &.pddbg {
+        .cck {
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 1080px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 774px) {
+  .thrv_lead_generation {
+    margin-top: 0 !important;
+  }
+}
+@import "_responsive";

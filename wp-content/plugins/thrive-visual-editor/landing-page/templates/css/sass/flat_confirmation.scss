@@ -1,0 +1,100 @@
+@import "compass/css3";
+@import "compass/support";
+@import "_common";
+@import "_responsive";
+
+body {
+  a, p, h1, h2, h3, h4, h5, h6, ul, ol, address, blockquote {
+    color: #666;
+  }
+  .tve_wrap_all {
+    h1, h2, h3, h4, h5, h6, p, blockquote, a, address, pre, blockquote, span, ul, li {
+      font-family: 'Lato';
+      font-weight: 400;
+    }
+    h1, h2 {
+      font-weight: 700;
+    }
+    .bold_text {
+      font-weight: 700;
+    }
+    .tve_cb {
+      width: 100%;
+      .tve_cb_cnt {
+        padding: 10px;
+        > p {
+          text-shadow: none;
+        }
+      }
+    }
+  }
+  &.tve_lp {
+    background-color: #fff;
+  }
+  .tve_content_width, .thrv_page_section .out .in {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1080px;
+  }
+  .tve_lp_flat_confirmation {
+    .tve_lp_content {
+      .thrv_contentbox_shortcode {
+        .tve_cb {
+          border-width: 0;
+          box-shadow: none;
+          &.tve_green {
+            background-color: #8bde85;
+            background-image: none;
+          }
+          &.tve_white {
+            background-color: #f9f9f9;
+            background-image: none;
+          }
+        }
+      }
+    }
+  }
+  .tve_lp_footer {
+    a, p {
+      color: #6c6c6c;
+    }
+  }
+}
+
+@font-face {
+  font-family: 'tlp-icon-simpleflat';
+  src: url('fonts/flat_confirmation/tlp-icon-simpleflat.eot?-o8i8n3');
+  src: url('fonts/flat_confirmation/tlp-icon-simpleflat.eot?#iefix-o8i8n3') format('embedded-opentype'), url('fonts/flat_confirmation/tlp-icon-simpleflat.woff?-o8i8n3') format('woff'), url('fonts/flat_confirmation/tlp-icon-simpleflat.ttf?-o8i8n3') format('truetype'), url('fonts/flat_confirmation/tlp-icon-simpleflat.svg?-o8i8n3#tlp-icon-simpleflat') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="flat-confirmation-icon"], [class*=" flat-confirmation-icon"] {
+  font-family: 'tlp-icon-simpleflat' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.flat-confirmation-icon-envelop:before {
+  content: "\21";
+}
+
+.flat-confirmation-icon-envelop-opened:before {
+  content: "\22";
+}
+
+.flat-confirmation-icon-pointer:before {
+  content: "\23";
+}
+
+.flat-confirmation-icon-checkmark-circle:before {
+  content: "\24";
+}

@@ -1,0 +1,31 @@
+<li class="tve_ed_btn tve_btn_text<?php if (isset($btn_class)) echo ' ' . $btn_class; unset($btn_class) ?>">
+    <div class="tve_option_separator">
+        <i class="tve_icon tve_icon-15 tve_left"></i><span class="tve_caret tve_left" id="sub_01"></span>
+
+        <div class="tve_clear"></div>
+        <div class="tve_sub_btn ">
+            <div class="tve_sub active_sub_menu color_selector tve_clearfix" id="tve_sub_01_s">
+                <ul class="tve_default_colors tve_left">
+                    <li class="tve_color_title"><span class="tve_options_headline">Default Colors</span></li>
+                    <li class="tve_clear"></li>
+                    <li class="tve_black"><a href="#"></a></li>
+                    <li class="tve_blue"><a href="#"></a></li>
+                    <li class="tve_green"><a href="#"></a></li>
+                    <li class="tve_orange"><a href="#"></a></li>
+                    <li class="tve_clear"></li>
+                    <li class="tve_purple"><a href="#"></a></li>
+                    <li class="tve_red"><a href="#"></a></li>
+                    <li class="tve_teal"><a href="#"></a></li>
+                    <li class="tve_white"><a href="#"></a></li>
+                </ul>
+                <?php if (isset($has_custom_colors)) : ?>
+                    <div class="tve_color_picker tve_left">
+                        <span class="tve_options_headline tve_color_title">Custom Colors</span>
+                    </div>
+                    <?php unset($has_custom_colors); ?>
+                <?php endif ?>
+                <div class="tve_clear"></div>
+            </div>
+        </div>
+    </div>
+</li>

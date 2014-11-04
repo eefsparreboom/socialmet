@@ -1,0 +1,149 @@
+@import "compass/css3";
+@import "compass/support";
+@import "_common";
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+.tve_wrap_all {
+  h1, h2, h3, h4, h5, h6, blockquote, a, address, pre, blockquote, span, ul, li {
+    font-family: 'Lato';
+    font-weight: 400;
+  }
+  p {
+    font-family: 'Lato';
+    font-weight: 300;
+  }
+  .bold_text {
+    font-weight: 700;
+  }
+}
+
+body {
+  #tve_editor {
+    padding: 0;
+  }
+  .tve_wrap_all {
+    padding: 0;
+  }
+  &.tve_lp {
+    background-color: #ffffff;
+  }
+  .tve_content_width, .thrv_page_section .out .in {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1060px;
+  }
+  a {
+    color: #636363;
+    &:hover {
+      color: #636363;
+      text-decoration: underline;
+    }
+  }
+}
+
+.tve_lp_header, .tve_lp_footer {
+  .thrv_page_section .out .in {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+}
+
+.tve_wrap_inner, .tve_wrap_all {
+  min-height: 100%;
+  padding: 0;
+}
+
+.tve_post_lp {
+  margin: 0 auto;
+  min-height: 100px;
+  .tve_lp_content {
+    margin: 0 auto;
+    min-height: 260px;
+    padding: 0;
+    &.tve_no_shadow {
+      @include box-shadow(none);
+    }
+    .tve_btn3 {
+      &.tve_bigBtn {
+        @include border-radius(2px);
+        border-width: 1px;
+        border-style: solid;
+        box-shadow: none;
+        font-family: 'Lato';
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 26px;
+        text-shadow: none;
+        text-transform: none;
+        a {
+          @include text-shadow(1px 0px 0px rgba(#000, .17));
+          font-size: 28px;
+          padding: 20px 70px;
+        }
+      }
+    }
+    .tve_sep1 {
+      border-width: 0;
+      box-shadow: none;
+      background-image: url('./images/tve_sep1.png');
+      background-repeat: no-repeat;
+      background-position: center 0;
+      background-color: transparent;
+      height: 15px;
+    }
+    /* page sections full width */
+    .out {
+      width: 6060px;
+      margin-left: -2500px;
+    }
+  }
+  .out {
+    .in {
+      &.pddbg {
+        .cck {
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 1060px;
+        }
+      }
+    }
+  }
+  .tve_lp_header, .tve_lp_footer {
+    .out {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+$color-pallete: 'black' #333333 #3d3d3d #181818 #3d3c3c #292929 #151515, 'blue' #3ab2f0 #1589de #2e4f8a #6495ea #2754a4 #22447f, 'green' #52DC35 #5be43e #2e943c #20e73a #4da859 #127a20, 'orange' #ffc300 #ffcc00 #d2a000 #fad232 #ebb503 #c09300, 'purple' #8656c1 #934de9 #694398 #b274ff #603595 #451c79, 'red' #ce271b #e03f34 #ce180b #ee3528 #c61407 #ff1100, 'teal' #45e4c8 #7CDECD #306d62 #0acba9 #10d2b0 #0e7361, 'white' #d8d8d8 #e2e1e1 #959595 #e0dede #a2a2a2 #6f6f6f;
+
+@each $color in $color-pallete {
+  .tve_post_lp {
+    .tve_lp_content {
+      .tve_btn.tve_#{nth($color, 1)}.tve_btn3  {
+        background: nth($color, 2);
+        @include background-image(linear-gradient(nth($color, 2) 0%, nth($color, 3) 100%));
+        border-color: nth($color, 4);
+        &:hover {
+          background-color: nth($color, 5) !important;
+          background-image: none;
+        }
+        &:active {
+          background-color: nth($color, 6) !important;
+          @include box-shadow(0px 1px 3px 1px nth($color, 7) inset);
+        }
+      }
+    }
+  }
+}
+
+@import "_responsive";

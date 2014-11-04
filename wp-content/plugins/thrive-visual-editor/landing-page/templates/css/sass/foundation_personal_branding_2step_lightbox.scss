@@ -1,0 +1,112 @@
+@import "compass/css3";
+@import "compass/support";
+
+@mixin mukta {
+  font-family: 'Ek Mukta', sans-serif;
+}
+
+body {
+  .tve_p_lb_background {
+    .tve_p_lb_content {
+      @include border-radius(0);
+      @include box-shadow(none);
+      background: rgba(#282525, .95%);
+    }
+  }
+}
+
+.tve_p_lb_background {
+  .tve_p_lb_content {
+    @include mukta();
+    h1 {
+      font-weight: 200;
+    }
+    .thrv_lead_generation {
+      input[type="text"] {
+        @include border-radius(30px);
+        @include mukta();
+        background: #fff;
+        border: 1px solid rgba(#000, .2);
+        color: #a2a2a2;
+        font-size: 19px;
+        font-weight: 200;
+        font-style: normal;
+        height: auto;
+        line-height: normal;
+        margin-top: 0;
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        &:hover {
+          border: 1px solid rgba(#000, .3);
+        }
+        &:focus {
+          @include box-shadow(0 1px 2px -1px rgba(#000, .26) inset);
+          border: 1px solid rgba(#000, .4);
+          color: #333;
+        }
+      }
+      .tve_submit_container {
+        margin: 10px auto 0 auto;
+        position: relative;
+        button {
+          @include box-shadow(0 1px 0 0 rgba(#fff, .84) inset);
+          @include border-radius(30px);
+          @include text-shadow(1px 0 0 rgba(#000, .24));
+          @include mukta();
+          color: #fff;
+          font-size: 19px;
+          font-weight: 700;
+          min-width: 10px;
+          &:hover, &:active {
+            @include box-shadow(0 1px 0 0 rgba(#fff, .84) inset);
+            @include border-radius(30px);
+            font-size: 19px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tve_p_lb_background .tve_p_lb_content.cnt .tve_p_lb_close {
+  @include border-radius(0);
+  @include mukta();
+  border: 1px solid #949292;
+  background: transparent;
+  color: #949292;
+  height: 37px;
+  line-height: 33px;
+  font-size: 44px;
+  font-weight: 300;
+  top: 10px;
+  right: 10px;
+  width: 37px;
+}
+
+$color-pallete: 'black' #000000 #4e4e4e #2f2f2f #343434,
+'blue' #76bee7 #abdcf8 #8cbcd8 #a0d8f8,
+'green' #329c2a #4de051 #2ec132 #34dd39,
+'orange' #f2af20 #f4cc77 #d6ae58 #f4c664,
+'purple' #6d69b5 #a3a0fe #8581df #9793ff,
+'red' #ad2d2d #e25d5d #c33e3e #df4646,
+'teal' #448d90 #74b4b7 #549497 #60aaad,
+'white' #dedede #f2f2f2 #d2d2d2 #dedede;
+
+@each $color in $color-pallete {
+  .thrv_lead_generation.tve_#{nth($color, 1)} .thrv_lead_generation_container {
+    .tve_submit_container {
+      button {
+        border: 1px solid nth($color, 2);
+        @include background-image(linear-gradient(nth($color, 3) 0%, nth($color, 4) 100%));
+        &:hover {
+          @include background-image(linear-gradient(nth($color, 4) 0%, nth($color, 3) 100%));
+        }
+        &:active {
+          background: nth($color, 5);
+        }
+      }
+    }
+  }
+}
+
+

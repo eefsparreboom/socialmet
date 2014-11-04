@@ -1,0 +1,54 @@
+@import "compass/css3";
+
+/* Page Sections available when there is no Thrive Theme active */
+body {
+  .clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+}
+.thrv_page_section {
+  .out {
+    color: #5b5b5b;
+    .darkSec {
+      color: #706f6f;
+    }
+    .lightSec {
+      color: #ffffff;
+    }
+    .in {
+      margin: 0 auto;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    &.pswr {
+      .lightSec {
+        p {
+          @include text-shadow(1px 1px 2px #000);
+        }
+      }
+    }
+  }
+  .pdwbg {
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .pddbg {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .pdfbg {
+    &.smaller {
+      background-size: 100% 100%;
+    }
+  }
+}

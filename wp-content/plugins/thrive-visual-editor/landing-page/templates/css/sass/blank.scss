@@ -1,0 +1,240 @@
+@import "compass/css3";
+@import "compass/support";
+@import "_common";
+
+$text_color: #454545;
+$small_heads_color: #5e5e5e;
+$link_color: #2488ef;
+
+@mixin opensans {
+  font-family: 'Open Sans', 'sans serif';
+}
+
+body {
+  background-color: transparent !important;
+  min-height: 100%;
+  @include opensans;
+  .tve_wrap_all {
+    @include opensans;
+  }
+}
+
+/* reset CSS rules here */
+.tve_wrap_all {
+  .tve_lp_header {
+    > .tve_image_caption {
+      margin-top: 30px;
+    }
+  }
+  .tve_lp_content {
+    > h1, > h2, > h3, > h4, > h5, > h6, > p, > address, > ul, li {
+      @include opensans;
+      color: $text_color;
+      line-height: 1.5;
+      font-size: 18px;
+      font-weight: normal;
+      font-style: normal;
+      white-space: normal;
+    }
+    > p, > address {
+      margin: 20px 0;
+    }
+    > h1, > h2, > h3, > h4, > h5, > h6 {
+      font-weight: 800;
+      margin: 20px 0;
+      line-height: 1.3;
+    }
+    > h1 {
+      font-size: 60px;
+    }
+    > h2 {
+      font-size: 48px;
+    }
+    > h3 {
+      font-size: 36px;
+    }
+    > h4 {
+      font-size: 30px;
+    }
+    > h5 {
+      font-size: 24px;
+    }
+    > h6 {
+      font-size: 18px;
+    }
+    h4,h5,h6 {
+      color: $small_heads_color;
+    }
+  }
+  blockquote {
+    @include opensans;
+    background-color: transparent;
+    border-left: 5px solid #e6e6e6;
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 0;
+    color: #454545;
+    font-size: 24px;
+    font-weight: 300;
+    font-style: normal;
+    margin-left: 0;
+    position: relative;
+    padding: 15px 0 15px 20px;
+    &:before {
+      display: none;
+    }
+  }
+  pre {
+    @include border-radius(0px);
+    background-image: none;
+    background-color: #e6e6e6;
+    color: #454545;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 18px;
+    margin: 20px 0;
+    padding: 20px;
+    border-width: 0;
+  }
+  a {
+    color: $link_color;
+  }
+  ul {
+    list-style-image: none;
+    list-style-type: disc;
+    margin: 20px 0;
+    padding: 0 0 0 50px;
+    li {
+      line-height: 2.22;
+      &:before {
+        content: none;
+      }
+    }
+    ul {
+      margin: 0;
+    }
+  }
+  .cnt {
+    font-weight: normal;
+    blockquote {
+      margin: 20px 0;
+    }
+  }
+  address {
+    font-style: italic;
+  }
+  article {
+    padding: 0;
+    margin: 0;
+  }
+  .tve_post_lp {
+    overflow: inherit;
+  }
+  .tve_lp_footer {
+    a {
+      color: #909090;
+    }
+  }
+}
+
+.tve_wrap_inner, .tve_wrap_all {
+  min-height: 100%;
+}
+
+.tve_post_lp {
+  margin: 0 auto;
+  max-width: 1080px;
+  min-height: 100px;
+  .tve_lp_content {
+    background-color: #ffffff;
+    margin: 30px 0 15px 0;
+    min-height: 260px;
+    padding: 15px 40px;
+    @include box-shadow(0px 0px 15px 3px #CCCCCC);
+    &.tve_no_shadow {
+      @include box-shadow(none);
+    }
+  }
+}
+
+.thrv_page_section {
+  margin-left: 0;
+  margin-right: 0;
+  .tve_lp_content & .out {
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+  .in {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+/*
+  image captions
+*/
+.wp-caption-text {
+  @include opensans;
+  background: #e6e6e6;
+  text-align: center;
+  .tve_wrap_all .thrv_wrapper.tve_image_caption & {
+    color: #454545;
+    font-size: 18px;
+    padding: 8px 0;
+  }
+}
+
+/*
+  tables
+*/
+
+.thrv_wrapper {
+  table {
+    @include opensans;
+    thead {
+      tr.tve_table_row th {
+        padding: 15px;
+      }
+    }
+    tbody {
+      tr.tve_table_row td {
+        padding: 15px;
+      }
+    }
+    th {
+      background: #454545;
+      color: #fff;
+      font-weight: 400;
+      font-size: 20px;
+      text-align: left;
+      padding: 10px;
+      p {
+        color: #fff;
+      }
+    }
+    tr {
+      td {
+        color: #454545;
+        font-size: 18px;
+      }
+      &:nth-child(odd) {
+        td {
+          background: #f8f8f8;
+        }
+      }
+      &:nth-child(even) {
+        td {
+          background: #e6e6e6;
+        }
+      }
+    }
+  }
+}
+/*
+  normalize the css
+*/
+.tve_cb, .tve_ts {
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+@import "_responsive";

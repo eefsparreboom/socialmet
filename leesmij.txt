@@ -1,0 +1,46 @@
+#######################
+## H O S T I N G X S ##
+#######################
+
+
+De leesmij.txt bevind zich in uw homedirectory. Vanuit deze map kunt u toegang 
+krijgen tot uw website. Hier zal een (symbolic) link komen te staan,  wanneer 
+u de site beheer rechten hebt ingesteld via het HostingXS Control Panel:
+https://controlpanel.hostingxs.nl
+
+De structuur van uw webruimte is als volgt opgebouwd:
+
++
+|-- public_html : bestanden die u in deze map plaatst, komen online te staan
+|   |-- errors  : deze map bevat foutdocumenten voor de webserver, bijvoorbeeld voor een "404 Document niet gevonden".
+|   \-- usage   : in deze map worden automatisch statistieken over het bezoek aan uw site geplaatst
+|-- logs        : de logbestanden van de webserver worden hierin geplaatst
+\-- cgi-bin     : hierin kunt u CGI scripts plaatsen, bereikbaar via http://uw.domein.ext/cgi-bin/
+
+
+*) Heeft u problemen met het benaderen van uw webruimte?
+	Wij adviseren om gebruik te maken van het programma FileZilla, welke 
+	gratis te downloaden is op http://filezilla-project.org/ (client versie)
+	Let op dat u niet Filezilla Server downloadt.
+
+	Als u werkt met een ander programma, en de koppeling naar uw webruimte niet werkt,
+	kan het zijn dat u enkele configuraties dient aan te passen.
+
+	U dient de website te publiceren in de public_html. Wanneer u gebruik maakt van een programma als 
+	Adobe Dreamweaver, kunt u een publicatie-pad opgeven. Mogelijke paden die u kunt opgeven zijn:
+	/domains/<uwdomeinnaam.tld>/public_html/
+	/home/<gebruikersnaam>/<uwdomeinnaam.tld>/public_html/
+	/<uwdomeinnaam.tld>/public_html/
+	<uwdomeinnaam.tld>/public_html/
+
+	Daarbij dient u <uwdomeinnaam.tld> te vervangen door uw eigen (hoofd)domeinnaam.
+
+
+Mocht u nog vragen hebben, dan kunt u altijd contact opnemen met onze helpdesk.
+Deze is te bereiken per e-mail op support@hostingxs.nl of op telefoonnummer +31 (0)24 - 324 91 77.
+
+Veel succes bij HostingXS!
+
+--
+HostingXS Team
+20100330

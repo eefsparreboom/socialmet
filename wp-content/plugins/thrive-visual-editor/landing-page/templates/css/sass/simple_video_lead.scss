@@ -1,0 +1,243 @@
+@import "compass/css3";
+@import "compass/support";
+@import "_common";
+
+.tve_wrap_all {
+  h1, h2, h3, h4, h5, h6, p, blockquote, a, address, pre, blockquote, ul, li {
+    font-family: 'Raleway';
+    font-weight: 300;
+  }
+  h1, h2, h3, h4, h5, h6, p {
+    color: #ffffff;
+  }
+  .darkSec {
+
+  }
+  a, a:hover {
+    color: inherit;
+  }
+  .bold_text {
+    font-weight: 500;
+  }
+  h5 {
+    text-transform: none;
+  }
+}
+
+body {
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  &.tve_lp {
+    background: #fff;
+  }
+  .tve_lp_content_bg {
+    background-image: url("./images/landing_page_3_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #983837;
+    padding-top: 60px;
+  }
+  .tve_wrap_all {
+    padding: 0;
+  }
+  .tve_content_width, .thrv_page_section .out .in {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1080px;
+  }
+  h1 {
+    @include text-shadow(0px 2px 5px rgba(#000, .2));
+    font-weight: normal;
+  }
+  .thrv_button_shortcode {
+    .tve_btn {
+      a {
+        @include text-shadow(1px 0px 1px rgba(#000, .21));
+      }
+    }
+  }
+  .tve_btn {
+    @include box-sizing(border-box);
+    font-size: 30px;
+    margin-bottom: 3px;
+    &.tve_bigBtn {
+      min-width: 10px;
+      a {
+        padding: 20px 50px;
+      }
+    }
+    &:active {
+      background-image: none;
+    }
+  }
+  .thrv_responsive_video {
+    background: #000;
+    position: relative;
+    z-index: 1;
+    &:before, &:after {
+      @include box-shadow(1px 1px 14px 13px rgba(#000, .5));
+      @include transform(rotate(3deg));
+      border: 0;
+      content: "";
+      position: absolute;
+      left: 20px;
+      bottom: 8px;
+      width: 20%;
+      z-index: -1;
+    }
+    &:after {
+      @include transform(rotate(-3deg));
+      right: 20px;
+      left: auto;
+    }
+  }
+  .tve_lp_simple_video_lead {
+    .thrv_lead_generation {
+      input[type="text"] {
+        @include border-radius(0);
+        @include box-shadow(inset 0px 2px 10px 0px rgba(#000, .1));
+        border: 1px solid #cccccc;
+        background: #fff;
+        color: #333333;
+        font-family: 'Raleway';
+        font-size: 16px;
+        font-weight: 300;
+        font-style: normal;
+        line-height: 30px;
+        height: auto;
+        margin: 0;
+        padding: 10px !important;
+        &:hover, &:focus {
+          border: 1px solid #cccccc;
+        }
+      }
+      .thrv_lead_generation_container {
+        button {
+          @include border-radius(2px);
+          @include text-shadow(none);
+          font-size: 18px;
+          font-family: 'Raleway';
+          padding: 15px;
+          &:active {
+            background-image: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+$color-pallete:
+'black' #333333 #3d3d3d #181818 #3d3c3c #292929 #151515,
+'blue' #3ab2f0 #1589de #2e4f8a #6495ea #2754a4 #22447f,
+'green' #52DC35 #fff #7c9735 #a1bf47 #536424 #127a20,
+'orange' #ffc300 #ffcc00 #d2a000 #fad232 #ebb503 #c09300,
+'purple' #8656c1 #934de9 #694398 #b274ff #603595 #451c79,
+'red' #ce271b #e03f34 #b74c39 #d35b47 #5e2625 #5b2323,
+'teal' #45e4c8 #7CDECD #306d62 #0acba9 #10d2b0 #0e7361,
+'white' #d8d8d8 #fff #d8d8d8 #f4f4f4 #838383 #4e4e4e;
+
+@each $color in $color-pallete {
+  .tve_lp_simple_video_lead {
+    .thrv_lead_generation.tve_#{nth($color, 1)} {
+      .thrv_lead_generation_container {
+        button {
+          @include box-shadow(
+                  0 1px 0 0 rgba(#fff, .53) inset,
+                  0 2px 3px 0 nth($color, 7)
+          );
+          @include background-image(linear-gradient(nth($color, 5) 0%, nth($color, 4) 100%));
+          border: 1px solid nth($color, 6);
+          &:hover {
+            background-image: linear-gradient(nth($color, 4), nth($color, 5));
+          }
+          &:active {
+            background-color: nth($color, 4);
+          }
+        }
+      }
+    }
+  }
+}
+
+.tve_lp_footer {
+  position: relative;
+  .thrv_columns {
+    .tve_twc {
+      box-sizing: border-box;
+      padding: 0 10px;
+      width: 50%;
+      &.tve_lst {
+        border-left: 1px solid #999999;
+      }
+    }
+    a {
+      color: #999999;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+/* page sections */
+.tve_post_lp {
+  .tve_lp_header {
+    min-height: 30px;
+  }
+  .tve_lp_content {
+    .out {
+      width: 6080px;
+      margin-left: -2500px;
+    }
+  }
+  .out {
+    .in {
+      &.pddbg {
+        .cck {
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 1080px;
+        }
+      }
+    }
+  }
+  .tve_lp_header, .tve_lp_footer {
+    .out {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 774px) {
+  body {
+    &.logged-in {
+      position: static;
+    }
+  }
+  .tve_wrap_all {
+//    margin-top: 10px;
+  }
+  .tve_lp_footer .thrv_columns .tve_twc.tve_lst {
+    border-width: 0;
+  }
+  .tve_lp_content {
+    padding-top: 35px!important;
+    .thrv_columns {
+      .tve_twc {
+        img {
+          display: table;
+          max-width: 150px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+@import "_responsive";

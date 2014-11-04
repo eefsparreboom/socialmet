@@ -1,0 +1,432 @@
+[04-Nov-2014 15:06:31 UTC] PHP Warning:  Illegal string offset 'out' in /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/modules/blog/video/video.php on line 142
+[04-Nov-2014 15:06:31 UTC] PHP Stack trace:
+[04-Nov-2014 15:06:31 UTC] PHP   1. {main}() /Users/eveline/Sites/socialmet/wp-admin/admin.php:0
+[04-Nov-2014 15:06:31 UTC] PHP   2. do_action() /Users/eveline/Sites/socialmet/wp-admin/admin.php:200
+[04-Nov-2014 15:06:31 UTC] PHP   3. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:06:31 UTC] PHP   4. OptimizePress_PageBuilder->load_page_builder() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:06:31 UTC] PHP   5. OptimizePress_PageBuilder->setup_wizard() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:72
+[04-Nov-2014 15:06:31 UTC] PHP   6. call_user_func() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:154
+[04-Nov-2014 15:06:31 UTC] PHP   7. OptimizePress_PageBuilder->step_5() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:154
+[04-Nov-2014 15:06:31 UTC] PHP   8. OptimizePress_LiveEditor->load_editor() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:629
+[04-Nov-2014 15:06:31 UTC] PHP   9. op_page_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/live_editor.php:268
+[04-Nov-2014 15:06:31 UTC] PHP  10. _op_page_func() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1066
+[04-Nov-2014 15:06:31 UTC] PHP  11. call_user_func_array() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1060
+[04-Nov-2014 15:06:31 UTC] PHP  12. OptimizePress_Page_Options->load_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1060
+[04-Nov-2014 15:06:31 UTC] PHP  13. OptimizePress_Page_Options->generate_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:178
+[04-Nov-2014 15:06:31 UTC] PHP  14. op_process_content_filter() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:545
+[04-Nov-2014 15:06:31 UTC] PHP  15. apply_filters() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/general.php:838
+[04-Nov-2014 15:06:31 UTC] PHP  16. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:192
+[04-Nov-2014 15:06:31 UTC] PHP  17. do_shortcode() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:192
+[04-Nov-2014 15:06:31 UTC] PHP  18. preg_replace_callback() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:201
+[04-Nov-2014 15:06:31 UTC] PHP  19. do_shortcode_tag() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:201
+[04-Nov-2014 15:06:31 UTC] PHP  20. call_user_func() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:287
+[04-Nov-2014 15:06:31 UTC] PHP  21. OptimizePress_Default_Assets::video_player() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:287
+[04-Nov-2014 15:06:31 UTC] PHP  22. OptimizePress_Blog_Video_Module->output() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/assets/default.php:3770
+[04-Nov-2014 15:06:31 UTC] PHP Warning:  Illegal string offset 'new_options' in /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/modules/blog/video/video.php on line 142
+[04-Nov-2014 15:06:31 UTC] PHP Stack trace:
+[04-Nov-2014 15:06:31 UTC] PHP   1. {main}() /Users/eveline/Sites/socialmet/wp-admin/admin.php:0
+[04-Nov-2014 15:06:31 UTC] PHP   2. do_action() /Users/eveline/Sites/socialmet/wp-admin/admin.php:200
+[04-Nov-2014 15:06:31 UTC] PHP   3. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:06:31 UTC] PHP   4. OptimizePress_PageBuilder->load_page_builder() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:06:31 UTC] PHP   5. OptimizePress_PageBuilder->setup_wizard() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:72
+[04-Nov-2014 15:06:31 UTC] PHP   6. call_user_func() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:154
+[04-Nov-2014 15:06:31 UTC] PHP   7. OptimizePress_PageBuilder->step_5() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:154
+[04-Nov-2014 15:06:31 UTC] PHP   8. OptimizePress_LiveEditor->load_editor() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:629
+[04-Nov-2014 15:06:31 UTC] PHP   9. op_page_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/live_editor.php:268
+[04-Nov-2014 15:06:31 UTC] PHP  10. _op_page_func() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1066
+[04-Nov-2014 15:06:31 UTC] PHP  11. call_user_func_array() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1060
+[04-Nov-2014 15:06:31 UTC] PHP  12. OptimizePress_Page_Options->load_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1060
+[04-Nov-2014 15:06:31 UTC] PHP  13. OptimizePress_Page_Options->generate_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:178
+[04-Nov-2014 15:06:31 UTC] PHP  14. op_process_content_filter() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:545
+[04-Nov-2014 15:06:31 UTC] PHP  15. apply_filters() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/general.php:838
+[04-Nov-2014 15:06:31 UTC] PHP  16. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:192
+[04-Nov-2014 15:06:31 UTC] PHP  17. do_shortcode() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:192
+[04-Nov-2014 15:06:31 UTC] PHP  18. preg_replace_callback() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:201
+[04-Nov-2014 15:06:31 UTC] PHP  19. do_shortcode_tag() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:201
+[04-Nov-2014 15:06:31 UTC] PHP  20. call_user_func() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:287
+[04-Nov-2014 15:06:31 UTC] PHP  21. OptimizePress_Default_Assets::video_player() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:287
+[04-Nov-2014 15:06:31 UTC] PHP  22. OptimizePress_Blog_Video_Module->output() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/assets/default.php:3770
+[04-Nov-2014 15:06:32 UTC] PHP Warning:  extract() expects parameter 1 to be array, string given in /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/assets/default.php on line 2731
+[04-Nov-2014 15:06:32 UTC] PHP Stack trace:
+[04-Nov-2014 15:06:32 UTC] PHP   1. {main}() /Users/eveline/Sites/socialmet/wp-admin/admin.php:0
+[04-Nov-2014 15:06:32 UTC] PHP   2. do_action() /Users/eveline/Sites/socialmet/wp-admin/admin.php:200
+[04-Nov-2014 15:06:32 UTC] PHP   3. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:06:32 UTC] PHP   4. OptimizePress_PageBuilder->load_page_builder() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:06:32 UTC] PHP   5. OptimizePress_PageBuilder->setup_wizard() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:72
+[04-Nov-2014 15:06:32 UTC] PHP   6. call_user_func() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:154
+[04-Nov-2014 15:06:32 UTC] PHP   7. OptimizePress_PageBuilder->step_5() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:154
+[04-Nov-2014 15:06:32 UTC] PHP   8. OptimizePress_LiveEditor->load_editor() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:629
+[04-Nov-2014 15:06:32 UTC] PHP   9. op_page_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/live_editor.php:268
+[04-Nov-2014 15:06:32 UTC] PHP  10. _op_page_func() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1066
+[04-Nov-2014 15:06:32 UTC] PHP  11. call_user_func_array() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1060
+[04-Nov-2014 15:06:32 UTC] PHP  12. OptimizePress_Page_Options->load_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1060
+[04-Nov-2014 15:06:32 UTC] PHP  13. OptimizePress_Page_Options->generate_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:178
+[04-Nov-2014 15:06:32 UTC] PHP  14. op_process_content_filter() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:545
+[04-Nov-2014 15:06:32 UTC] PHP  15. apply_filters() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/general.php:838
+[04-Nov-2014 15:06:32 UTC] PHP  16. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:192
+[04-Nov-2014 15:06:32 UTC] PHP  17. do_shortcode() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:192
+[04-Nov-2014 15:06:32 UTC] PHP  18. preg_replace_callback() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:201
+[04-Nov-2014 15:06:32 UTC] PHP  19. do_shortcode_tag() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:201
+[04-Nov-2014 15:06:32 UTC] PHP  20. call_user_func() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:287
+[04-Nov-2014 15:06:32 UTC] PHP  21. OptimizePress_Default_Assets::optin_box() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:287
+[04-Nov-2014 15:06:32 UTC] PHP  22. extract() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/assets/default.php:2731
+[04-Nov-2014 15:06:32 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/assets/default.php on line 2746
+[04-Nov-2014 15:06:32 UTC] PHP Stack trace:
+[04-Nov-2014 15:06:32 UTC] PHP   1. {main}() /Users/eveline/Sites/socialmet/wp-admin/admin.php:0
+[04-Nov-2014 15:06:32 UTC] PHP   2. do_action() /Users/eveline/Sites/socialmet/wp-admin/admin.php:200
+[04-Nov-2014 15:06:32 UTC] PHP   3. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:06:32 UTC] PHP   4. OptimizePress_PageBuilder->load_page_builder() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:06:32 UTC] PHP   5. OptimizePress_PageBuilder->setup_wizard() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:72
+[04-Nov-2014 15:06:32 UTC] PHP   6. call_user_func() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:154
+[04-Nov-2014 15:06:32 UTC] PHP   7. OptimizePress_PageBuilder->step_5() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:154
+[04-Nov-2014 15:06:32 UTC] PHP   8. OptimizePress_LiveEditor->load_editor() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:629
+[04-Nov-2014 15:06:32 UTC] PHP   9. op_page_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/live_editor.php:268
+[04-Nov-2014 15:06:32 UTC] PHP  10. _op_page_func() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1066
+[04-Nov-2014 15:06:32 UTC] PHP  11. call_user_func_array() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1060
+[04-Nov-2014 15:06:32 UTC] PHP  12. OptimizePress_Page_Options->load_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1060
+[04-Nov-2014 15:06:32 UTC] PHP  13. OptimizePress_Page_Options->generate_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:178
+[04-Nov-2014 15:06:32 UTC] PHP  14. op_process_content_filter() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:545
+[04-Nov-2014 15:06:32 UTC] PHP  15. apply_filters() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/general.php:838
+[04-Nov-2014 15:06:32 UTC] PHP  16. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:192
+[04-Nov-2014 15:06:32 UTC] PHP  17. do_shortcode() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:192
+[04-Nov-2014 15:06:32 UTC] PHP  18. preg_replace_callback() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:201
+[04-Nov-2014 15:06:32 UTC] PHP  19. do_shortcode_tag() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:201
+[04-Nov-2014 15:06:32 UTC] PHP  20. call_user_func() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:287
+[04-Nov-2014 15:06:32 UTC] PHP  21. OptimizePress_Default_Assets::optin_box() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:287
+[04-Nov-2014 15:06:32 UTC] PHP Warning:  Illegal string offset 'out' in /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/modules/blog/video/video.php on line 142
+[04-Nov-2014 15:06:32 UTC] PHP Stack trace:
+[04-Nov-2014 15:06:32 UTC] PHP   1. {main}() /Users/eveline/Sites/socialmet/wp-admin/admin.php:0
+[04-Nov-2014 15:06:32 UTC] PHP   2. do_action() /Users/eveline/Sites/socialmet/wp-admin/admin.php:200
+[04-Nov-2014 15:06:32 UTC] PHP   3. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:06:32 UTC] PHP   4. OptimizePress_PageBuilder->load_page_builder() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:06:32 UTC] PHP   5. OptimizePress_PageBuilder->setup_wizard() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:72
+[04-Nov-2014 15:06:32 UTC] PHP   6. call_user_func() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:154
+[04-Nov-2014 15:06:32 UTC] PHP   7. OptimizePress_PageBuilder->step_5() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:154
+[04-Nov-2014 15:06:32 UTC] PHP   8. OptimizePress_LiveEditor->load_editor() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:629
+[04-Nov-2014 15:06:32 UTC] PHP   9. op_page_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/live_editor.php:268
+[04-Nov-2014 15:06:32 UTC] PHP  10. _op_page_func() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1066
+[04-Nov-2014 15:06:32 UTC] PHP  11. call_user_func_array() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1060
+[04-Nov-2014 15:06:32 UTC] PHP  12. OptimizePress_Page_Options->load_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1060
+[04-Nov-2014 15:06:32 UTC] PHP  13. OptimizePress_Page_Options->generate_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:178
+[04-Nov-2014 15:06:32 UTC] PHP  14. op_process_content_filter() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:545
+[04-Nov-2014 15:06:32 UTC] PHP  15. apply_filters() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/general.php:838
+[04-Nov-2014 15:06:32 UTC] PHP  16. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:192
+[04-Nov-2014 15:06:32 UTC] PHP  17. do_shortcode() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:192
+[04-Nov-2014 15:06:32 UTC] PHP  18. preg_replace_callback() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:201
+[04-Nov-2014 15:06:32 UTC] PHP  19. do_shortcode_tag() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:201
+[04-Nov-2014 15:06:32 UTC] PHP  20. call_user_func() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:287
+[04-Nov-2014 15:06:32 UTC] PHP  21. OptimizePress_Default_Assets::video_player() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:287
+[04-Nov-2014 15:06:32 UTC] PHP  22. OptimizePress_Blog_Video_Module->output() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/assets/default.php:3770
+[04-Nov-2014 15:06:32 UTC] PHP Warning:  Illegal string offset 'new_options' in /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/modules/blog/video/video.php on line 142
+[04-Nov-2014 15:06:32 UTC] PHP Stack trace:
+[04-Nov-2014 15:06:32 UTC] PHP   1. {main}() /Users/eveline/Sites/socialmet/wp-admin/admin.php:0
+[04-Nov-2014 15:06:32 UTC] PHP   2. do_action() /Users/eveline/Sites/socialmet/wp-admin/admin.php:200
+[04-Nov-2014 15:06:33 UTC] PHP   3. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:06:33 UTC] PHP   4. OptimizePress_PageBuilder->load_page_builder() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:06:33 UTC] PHP   5. OptimizePress_PageBuilder->setup_wizard() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:72
+[04-Nov-2014 15:06:33 UTC] PHP   6. call_user_func() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:154
+[04-Nov-2014 15:06:33 UTC] PHP   7. OptimizePress_PageBuilder->step_5() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:154
+[04-Nov-2014 15:06:33 UTC] PHP   8. OptimizePress_LiveEditor->load_editor() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:629
+[04-Nov-2014 15:06:33 UTC] PHP   9. op_page_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/live_editor.php:268
+[04-Nov-2014 15:06:33 UTC] PHP  10. _op_page_func() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1066
+[04-Nov-2014 15:06:33 UTC] PHP  11. call_user_func_array() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1060
+[04-Nov-2014 15:06:33 UTC] PHP  12. OptimizePress_Page_Options->load_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1060
+[04-Nov-2014 15:06:33 UTC] PHP  13. OptimizePress_Page_Options->generate_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:178
+[04-Nov-2014 15:06:33 UTC] PHP  14. op_process_content_filter() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:545
+[04-Nov-2014 15:06:33 UTC] PHP  15. apply_filters() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/general.php:838
+[04-Nov-2014 15:06:33 UTC] PHP  16. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:192
+[04-Nov-2014 15:06:33 UTC] PHP  17. do_shortcode() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:192
+[04-Nov-2014 15:06:33 UTC] PHP  18. preg_replace_callback() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:201
+[04-Nov-2014 15:06:33 UTC] PHP  19. do_shortcode_tag() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:201
+[04-Nov-2014 15:06:33 UTC] PHP  20. call_user_func() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:287
+[04-Nov-2014 15:06:33 UTC] PHP  21. OptimizePress_Default_Assets::video_player() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:287
+[04-Nov-2014 15:06:33 UTC] PHP  22. OptimizePress_Blog_Video_Module->output() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/assets/default.php:3770
+[04-Nov-2014 15:06:34 UTC] PHP Warning:  extract() expects parameter 1 to be array, string given in /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/assets/default.php on line 2731
+[04-Nov-2014 15:06:35 UTC] PHP Stack trace:
+[04-Nov-2014 15:06:35 UTC] PHP   1. {main}() /Users/eveline/Sites/socialmet/wp-admin/admin.php:0
+[04-Nov-2014 15:06:35 UTC] PHP   2. do_action() /Users/eveline/Sites/socialmet/wp-admin/admin.php:200
+[04-Nov-2014 15:06:35 UTC] PHP   3. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:06:35 UTC] PHP   4. OptimizePress_PageBuilder->load_page_builder() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:06:35 UTC] PHP   5. OptimizePress_PageBuilder->setup_wizard() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:72
+[04-Nov-2014 15:06:35 UTC] PHP   6. call_user_func() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:154
+[04-Nov-2014 15:06:35 UTC] PHP   7. OptimizePress_PageBuilder->step_5() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:154
+[04-Nov-2014 15:06:35 UTC] PHP   8. OptimizePress_LiveEditor->load_editor() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:629
+[04-Nov-2014 15:06:35 UTC] PHP   9. op_page_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/live_editor.php:268
+[04-Nov-2014 15:06:36 UTC] PHP  10. _op_page_func() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1066
+[04-Nov-2014 15:06:36 UTC] PHP  11. call_user_func_array() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1060
+[04-Nov-2014 15:06:36 UTC] PHP  12. OptimizePress_Page_Options->load_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1060
+[04-Nov-2014 15:06:36 UTC] PHP  13. OptimizePress_Page_Options->generate_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:178
+[04-Nov-2014 15:06:36 UTC] PHP  14. op_process_content_filter() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:545
+[04-Nov-2014 15:06:36 UTC] PHP  15. apply_filters() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/general.php:838
+[04-Nov-2014 15:06:36 UTC] PHP  16. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:192
+[04-Nov-2014 15:06:37 UTC] PHP  17. do_shortcode() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:192
+[04-Nov-2014 15:06:37 UTC] PHP  18. preg_replace_callback() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:201
+[04-Nov-2014 15:06:37 UTC] PHP  19. do_shortcode_tag() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:201
+[04-Nov-2014 15:06:37 UTC] PHP  20. call_user_func() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:287
+[04-Nov-2014 15:06:37 UTC] PHP  21. OptimizePress_Default_Assets::optin_box() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:287
+[04-Nov-2014 15:06:37 UTC] PHP  22. extract() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/assets/default.php:2731
+[04-Nov-2014 15:06:38 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/assets/default.php on line 2746
+[04-Nov-2014 15:06:38 UTC] PHP Stack trace:
+[04-Nov-2014 15:06:38 UTC] PHP   1. {main}() /Users/eveline/Sites/socialmet/wp-admin/admin.php:0
+[04-Nov-2014 15:06:38 UTC] PHP   2. do_action() /Users/eveline/Sites/socialmet/wp-admin/admin.php:200
+[04-Nov-2014 15:06:38 UTC] PHP   3. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:06:38 UTC] PHP   4. OptimizePress_PageBuilder->load_page_builder() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:06:38 UTC] PHP   5. OptimizePress_PageBuilder->setup_wizard() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:72
+[04-Nov-2014 15:06:38 UTC] PHP   6. call_user_func() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:154
+[04-Nov-2014 15:06:38 UTC] PHP   7. OptimizePress_PageBuilder->step_5() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:154
+[04-Nov-2014 15:06:39 UTC] PHP   8. OptimizePress_LiveEditor->load_editor() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:629
+[04-Nov-2014 15:06:39 UTC] PHP   9. op_page_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/live_editor.php:268
+[04-Nov-2014 15:06:39 UTC] PHP  10. _op_page_func() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1066
+[04-Nov-2014 15:06:39 UTC] PHP  11. call_user_func_array() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1060
+[04-Nov-2014 15:06:39 UTC] PHP  12. OptimizePress_Page_Options->load_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1060
+[04-Nov-2014 15:06:39 UTC] PHP  13. OptimizePress_Page_Options->generate_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:178
+[04-Nov-2014 15:06:39 UTC] PHP  14. op_process_content_filter() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:545
+[04-Nov-2014 15:06:39 UTC] PHP  15. apply_filters() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/general.php:838
+[04-Nov-2014 15:06:39 UTC] PHP  16. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:192
+[04-Nov-2014 15:06:39 UTC] PHP  17. do_shortcode() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:192
+[04-Nov-2014 15:06:39 UTC] PHP  18. preg_replace_callback() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:201
+[04-Nov-2014 15:06:39 UTC] PHP  19. do_shortcode_tag() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:201
+[04-Nov-2014 15:06:39 UTC] PHP  20. call_user_func() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:287
+[04-Nov-2014 15:06:39 UTC] PHP  21. OptimizePress_Default_Assets::optin_box() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:287
+[04-Nov-2014 15:06:40 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/eveline/Sites/socialmet/wp-content/plugins/thrive-visual-editor/thrive-visual-editor.php on line 959
+[04-Nov-2014 15:06:40 UTC] PHP Stack trace:
+[04-Nov-2014 15:06:40 UTC] PHP   1. {main}() /Users/eveline/Sites/socialmet/wp-admin/admin.php:0
+[04-Nov-2014 15:06:40 UTC] PHP   2. do_action() /Users/eveline/Sites/socialmet/wp-admin/admin.php:200
+[04-Nov-2014 15:06:41 UTC] PHP   3. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:06:41 UTC] PHP   4. OptimizePress_PageBuilder->load_page_builder() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:06:41 UTC] PHP   5. OptimizePress_PageBuilder->setup_wizard() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:72
+[04-Nov-2014 15:06:41 UTC] PHP   6. call_user_func() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:154
+[04-Nov-2014 15:06:41 UTC] PHP   7. OptimizePress_PageBuilder->step_5() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:154
+[04-Nov-2014 15:06:41 UTC] PHP   8. OptimizePress_LiveEditor->load_editor() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:629
+[04-Nov-2014 15:06:41 UTC] PHP   9. require_once() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/live_editor.php:278
+[04-Nov-2014 15:06:41 UTC] PHP  10. wp_head() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/pages/landing/1/template.php:23
+[04-Nov-2014 15:06:41 UTC] PHP  11. do_action() /Users/eveline/Sites/socialmet/wp-includes/general-template.php:2030
+[04-Nov-2014 15:06:41 UTC] PHP  12. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:06:41 UTC] PHP  13. wp_enqueue_scripts() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:06:41 UTC] PHP  14. do_action() /Users/eveline/Sites/socialmet/wp-includes/script-loader.php:918
+[04-Nov-2014 15:06:41 UTC] PHP  15. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:06:41 UTC] PHP  16. tve_frontend_enqueue_scripts() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:06:41 UTC] PHP  17. tve_enqueue_style_family() /Users/eveline/Sites/socialmet/wp-content/plugins/thrive-visual-editor/thrive-visual-editor.php:908
+[04-Nov-2014 15:08:20 UTC] OP SL error: Authorization failed
+[04-Nov-2014 15:08:21 UTC] OP SL error: Authorization failed
+[04-Nov-2014 15:08:22 UTC] OP SL error: Authorization failed
+[04-Nov-2014 15:27:34 UTC] OP SL error: Authorization failed
+[04-Nov-2014 15:27:35 UTC] OP SL error: Authorization failed
+[04-Nov-2014 15:28:19 UTC] OP SL error: Authorization failed
+[04-Nov-2014 15:30:09 UTC] OP SL error: Authorization failed
+[04-Nov-2014 15:30:18 UTC] OP SL error: Authorization failed
+[04-Nov-2014 15:37:49 UTC] OP SL error: Authorization failed
+[04-Nov-2014 15:37:50 UTC] OP SL error: Authorization failed
+[04-Nov-2014 15:37:50 UTC] OP SL error: Authorization failed
+[04-Nov-2014 15:37:51 UTC] OP SL error: Authorization failed
+[04-Nov-2014 15:38:35 UTC] OP SL error: Authorization failed
+[04-Nov-2014 15:38:46 UTC] PHP Warning:  Illegal string offset 'out' in /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/modules/blog/video/video.php on line 142
+[04-Nov-2014 15:38:46 UTC] PHP Stack trace:
+[04-Nov-2014 15:38:46 UTC] PHP   1. {main}() /Users/eveline/Sites/socialmet/wp-admin/admin.php:0
+[04-Nov-2014 15:38:46 UTC] PHP   2. do_action() /Users/eveline/Sites/socialmet/wp-admin/admin.php:200
+[04-Nov-2014 15:38:46 UTC] PHP   3. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:38:46 UTC] PHP   4. OptimizePress_PageBuilder->load_page_builder() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:38:46 UTC] PHP   5. OptimizePress_PageBuilder->setup_wizard() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:72
+[04-Nov-2014 15:38:46 UTC] PHP   6. call_user_func() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:154
+[04-Nov-2014 15:38:46 UTC] PHP   7. OptimizePress_PageBuilder->step_5() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:154
+[04-Nov-2014 15:38:46 UTC] PHP   8. OptimizePress_LiveEditor->load_editor() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:629
+[04-Nov-2014 15:38:46 UTC] PHP   9. op_page_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/live_editor.php:268
+[04-Nov-2014 15:38:46 UTC] PHP  10. _op_page_func() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1066
+[04-Nov-2014 15:38:46 UTC] PHP  11. call_user_func_array() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1060
+[04-Nov-2014 15:38:46 UTC] PHP  12. OptimizePress_Page_Options->load_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1060
+[04-Nov-2014 15:38:46 UTC] PHP  13. OptimizePress_Page_Options->generate_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:178
+[04-Nov-2014 15:38:46 UTC] PHP  14. op_process_content_filter() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:545
+[04-Nov-2014 15:38:46 UTC] PHP  15. apply_filters() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/general.php:838
+[04-Nov-2014 15:38:46 UTC] PHP  16. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:192
+[04-Nov-2014 15:38:46 UTC] PHP  17. do_shortcode() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:192
+[04-Nov-2014 15:38:46 UTC] PHP  18. preg_replace_callback() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:201
+[04-Nov-2014 15:38:46 UTC] PHP  19. do_shortcode_tag() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:201
+[04-Nov-2014 15:38:46 UTC] PHP  20. call_user_func() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:287
+[04-Nov-2014 15:38:46 UTC] PHP  21. OptimizePress_Default_Assets::video_player() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:287
+[04-Nov-2014 15:38:46 UTC] PHP  22. OptimizePress_Blog_Video_Module->output() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/assets/default.php:3770
+[04-Nov-2014 15:38:46 UTC] PHP Warning:  Illegal string offset 'new_options' in /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/modules/blog/video/video.php on line 142
+[04-Nov-2014 15:38:46 UTC] PHP Stack trace:
+[04-Nov-2014 15:38:46 UTC] PHP   1. {main}() /Users/eveline/Sites/socialmet/wp-admin/admin.php:0
+[04-Nov-2014 15:38:46 UTC] PHP   2. do_action() /Users/eveline/Sites/socialmet/wp-admin/admin.php:200
+[04-Nov-2014 15:38:46 UTC] PHP   3. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:38:46 UTC] PHP   4. OptimizePress_PageBuilder->load_page_builder() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:38:46 UTC] PHP   5. OptimizePress_PageBuilder->setup_wizard() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:72
+[04-Nov-2014 15:38:46 UTC] PHP   6. call_user_func() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:154
+[04-Nov-2014 15:38:46 UTC] PHP   7. OptimizePress_PageBuilder->step_5() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:154
+[04-Nov-2014 15:38:46 UTC] PHP   8. OptimizePress_LiveEditor->load_editor() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:629
+[04-Nov-2014 15:38:46 UTC] PHP   9. op_page_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/live_editor.php:268
+[04-Nov-2014 15:38:46 UTC] PHP  10. _op_page_func() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1066
+[04-Nov-2014 15:38:46 UTC] PHP  11. call_user_func_array() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1060
+[04-Nov-2014 15:38:46 UTC] PHP  12. OptimizePress_Page_Options->load_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1060
+[04-Nov-2014 15:38:46 UTC] PHP  13. OptimizePress_Page_Options->generate_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:178
+[04-Nov-2014 15:38:46 UTC] PHP  14. op_process_content_filter() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:545
+[04-Nov-2014 15:38:46 UTC] PHP  15. apply_filters() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/general.php:838
+[04-Nov-2014 15:38:46 UTC] PHP  16. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:192
+[04-Nov-2014 15:38:46 UTC] PHP  17. do_shortcode() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:192
+[04-Nov-2014 15:38:46 UTC] PHP  18. preg_replace_callback() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:201
+[04-Nov-2014 15:38:46 UTC] PHP  19. do_shortcode_tag() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:201
+[04-Nov-2014 15:38:46 UTC] PHP  20. call_user_func() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:287
+[04-Nov-2014 15:38:46 UTC] PHP  21. OptimizePress_Default_Assets::video_player() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:287
+[04-Nov-2014 15:38:46 UTC] PHP  22. OptimizePress_Blog_Video_Module->output() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/assets/default.php:3770
+[04-Nov-2014 15:38:47 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/eveline/Sites/socialmet/wp-content/plugins/thrive-visual-editor/thrive-visual-editor.php on line 959
+[04-Nov-2014 15:38:47 UTC] PHP Stack trace:
+[04-Nov-2014 15:38:47 UTC] PHP   1. {main}() /Users/eveline/Sites/socialmet/wp-admin/admin.php:0
+[04-Nov-2014 15:38:47 UTC] PHP   2. do_action() /Users/eveline/Sites/socialmet/wp-admin/admin.php:200
+[04-Nov-2014 15:38:47 UTC] PHP   3. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:38:47 UTC] PHP   4. OptimizePress_PageBuilder->load_page_builder() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:38:47 UTC] PHP   5. OptimizePress_PageBuilder->setup_wizard() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:72
+[04-Nov-2014 15:38:47 UTC] PHP   6. call_user_func() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:154
+[04-Nov-2014 15:38:47 UTC] PHP   7. OptimizePress_PageBuilder->step_5() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:154
+[04-Nov-2014 15:38:47 UTC] PHP   8. OptimizePress_LiveEditor->load_editor() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:629
+[04-Nov-2014 15:38:47 UTC] PHP   9. require_once() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/live_editor.php:278
+[04-Nov-2014 15:38:47 UTC] PHP  10. wp_head() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/pages/landing/1/template.php:23
+[04-Nov-2014 15:38:47 UTC] PHP  11. do_action() /Users/eveline/Sites/socialmet/wp-includes/general-template.php:2030
+[04-Nov-2014 15:38:47 UTC] PHP  12. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:38:47 UTC] PHP  13. wp_enqueue_scripts() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:38:47 UTC] PHP  14. do_action() /Users/eveline/Sites/socialmet/wp-includes/script-loader.php:918
+[04-Nov-2014 15:38:47 UTC] PHP  15. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:38:47 UTC] PHP  16. tve_frontend_enqueue_scripts() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:38:47 UTC] PHP  17. tve_enqueue_style_family() /Users/eveline/Sites/socialmet/wp-content/plugins/thrive-visual-editor/thrive-visual-editor.php:908
+[04-Nov-2014 15:39:08 UTC] PHP Warning:  Illegal string offset 'out' in /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/modules/blog/video/video.php on line 142
+[04-Nov-2014 15:39:08 UTC] PHP Stack trace:
+[04-Nov-2014 15:39:08 UTC] PHP   1. {main}() /Users/eveline/Sites/socialmet/wp-admin/admin.php:0
+[04-Nov-2014 15:39:08 UTC] PHP   2. do_action() /Users/eveline/Sites/socialmet/wp-admin/admin.php:200
+[04-Nov-2014 15:39:08 UTC] PHP   3. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:39:08 UTC] PHP   4. OptimizePress_PageBuilder->load_page_builder() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:39:08 UTC] PHP   5. OptimizePress_PageBuilder->setup_wizard() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:72
+[04-Nov-2014 15:39:08 UTC] PHP   6. call_user_func() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:154
+[04-Nov-2014 15:39:08 UTC] PHP   7. OptimizePress_PageBuilder->step_5() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:154
+[04-Nov-2014 15:39:08 UTC] PHP   8. OptimizePress_LiveEditor->load_editor() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:629
+[04-Nov-2014 15:39:08 UTC] PHP   9. op_page_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/live_editor.php:268
+[04-Nov-2014 15:39:08 UTC] PHP  10. _op_page_func() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1066
+[04-Nov-2014 15:39:08 UTC] PHP  11. call_user_func_array() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1060
+[04-Nov-2014 15:39:08 UTC] PHP  12. OptimizePress_Page_Options->load_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1060
+[04-Nov-2014 15:39:08 UTC] PHP  13. OptimizePress_Page_Options->generate_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:178
+[04-Nov-2014 15:39:08 UTC] PHP  14. op_process_content_filter() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:545
+[04-Nov-2014 15:39:08 UTC] PHP  15. apply_filters() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/general.php:838
+[04-Nov-2014 15:39:08 UTC] PHP  16. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:192
+[04-Nov-2014 15:39:08 UTC] PHP  17. do_shortcode() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:192
+[04-Nov-2014 15:39:08 UTC] PHP  18. preg_replace_callback() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:201
+[04-Nov-2014 15:39:08 UTC] PHP  19. do_shortcode_tag() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:201
+[04-Nov-2014 15:39:08 UTC] PHP  20. call_user_func() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:287
+[04-Nov-2014 15:39:08 UTC] PHP  21. OptimizePress_Default_Assets::video_player() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:287
+[04-Nov-2014 15:39:08 UTC] PHP  22. OptimizePress_Blog_Video_Module->output() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/assets/default.php:3770
+[04-Nov-2014 15:39:08 UTC] PHP Warning:  Illegal string offset 'new_options' in /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/modules/blog/video/video.php on line 142
+[04-Nov-2014 15:39:08 UTC] PHP Stack trace:
+[04-Nov-2014 15:39:08 UTC] PHP   1. {main}() /Users/eveline/Sites/socialmet/wp-admin/admin.php:0
+[04-Nov-2014 15:39:08 UTC] PHP   2. do_action() /Users/eveline/Sites/socialmet/wp-admin/admin.php:200
+[04-Nov-2014 15:39:08 UTC] PHP   3. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:39:08 UTC] PHP   4. OptimizePress_PageBuilder->load_page_builder() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:39:08 UTC] PHP   5. OptimizePress_PageBuilder->setup_wizard() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:72
+[04-Nov-2014 15:39:08 UTC] PHP   6. call_user_func() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:154
+[04-Nov-2014 15:39:08 UTC] PHP   7. OptimizePress_PageBuilder->step_5() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:154
+[04-Nov-2014 15:39:08 UTC] PHP   8. OptimizePress_LiveEditor->load_editor() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:629
+[04-Nov-2014 15:39:08 UTC] PHP   9. op_page_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/live_editor.php:268
+[04-Nov-2014 15:39:08 UTC] PHP  10. _op_page_func() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1066
+[04-Nov-2014 15:39:08 UTC] PHP  11. call_user_func_array() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1060
+[04-Nov-2014 15:39:08 UTC] PHP  12. OptimizePress_Page_Options->load_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1060
+[04-Nov-2014 15:39:08 UTC] PHP  13. OptimizePress_Page_Options->generate_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:178
+[04-Nov-2014 15:39:08 UTC] PHP  14. op_process_content_filter() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:545
+[04-Nov-2014 15:39:08 UTC] PHP  15. apply_filters() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/general.php:838
+[04-Nov-2014 15:39:08 UTC] PHP  16. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:192
+[04-Nov-2014 15:39:08 UTC] PHP  17. do_shortcode() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:192
+[04-Nov-2014 15:39:08 UTC] PHP  18. preg_replace_callback() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:201
+[04-Nov-2014 15:39:08 UTC] PHP  19. do_shortcode_tag() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:201
+[04-Nov-2014 15:39:08 UTC] PHP  20. call_user_func() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:287
+[04-Nov-2014 15:39:08 UTC] PHP  21. OptimizePress_Default_Assets::video_player() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:287
+[04-Nov-2014 15:39:08 UTC] PHP  22. OptimizePress_Blog_Video_Module->output() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/assets/default.php:3770
+[04-Nov-2014 15:39:09 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/eveline/Sites/socialmet/wp-content/plugins/thrive-visual-editor/thrive-visual-editor.php on line 959
+[04-Nov-2014 15:39:09 UTC] PHP Stack trace:
+[04-Nov-2014 15:39:09 UTC] PHP   1. {main}() /Users/eveline/Sites/socialmet/wp-admin/admin.php:0
+[04-Nov-2014 15:39:09 UTC] PHP   2. do_action() /Users/eveline/Sites/socialmet/wp-admin/admin.php:200
+[04-Nov-2014 15:39:09 UTC] PHP   3. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:39:09 UTC] PHP   4. OptimizePress_PageBuilder->load_page_builder() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:39:09 UTC] PHP   5. OptimizePress_PageBuilder->setup_wizard() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:72
+[04-Nov-2014 15:39:09 UTC] PHP   6. call_user_func() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:154
+[04-Nov-2014 15:39:09 UTC] PHP   7. OptimizePress_PageBuilder->step_5() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:154
+[04-Nov-2014 15:39:09 UTC] PHP   8. OptimizePress_LiveEditor->load_editor() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:629
+[04-Nov-2014 15:39:09 UTC] PHP   9. require_once() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/live_editor.php:278
+[04-Nov-2014 15:39:09 UTC] PHP  10. wp_head() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/pages/landing/1/template.php:23
+[04-Nov-2014 15:39:09 UTC] PHP  11. do_action() /Users/eveline/Sites/socialmet/wp-includes/general-template.php:2030
+[04-Nov-2014 15:39:09 UTC] PHP  12. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:39:09 UTC] PHP  13. wp_enqueue_scripts() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:39:09 UTC] PHP  14. do_action() /Users/eveline/Sites/socialmet/wp-includes/script-loader.php:918
+[04-Nov-2014 15:39:09 UTC] PHP  15. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:39:09 UTC] PHP  16. tve_frontend_enqueue_scripts() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:39:09 UTC] PHP  17. tve_enqueue_style_family() /Users/eveline/Sites/socialmet/wp-content/plugins/thrive-visual-editor/thrive-visual-editor.php:908
+[04-Nov-2014 15:42:53 UTC] PHP Warning:  Illegal string offset 'out' in /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/modules/blog/video/video.php on line 142
+[04-Nov-2014 15:42:53 UTC] PHP Stack trace:
+[04-Nov-2014 15:42:53 UTC] PHP   1. {main}() /Users/eveline/Sites/socialmet/wp-admin/admin.php:0
+[04-Nov-2014 15:42:53 UTC] PHP   2. do_action() /Users/eveline/Sites/socialmet/wp-admin/admin.php:200
+[04-Nov-2014 15:42:53 UTC] PHP   3. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:42:53 UTC] PHP   4. OptimizePress_PageBuilder->load_page_builder() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:42:53 UTC] PHP   5. OptimizePress_PageBuilder->setup_wizard() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:72
+[04-Nov-2014 15:42:53 UTC] PHP   6. call_user_func() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:154
+[04-Nov-2014 15:42:53 UTC] PHP   7. OptimizePress_PageBuilder->step_5() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:154
+[04-Nov-2014 15:42:53 UTC] PHP   8. OptimizePress_LiveEditor->load_editor() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:629
+[04-Nov-2014 15:42:53 UTC] PHP   9. op_page_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/live_editor.php:268
+[04-Nov-2014 15:42:53 UTC] PHP  10. _op_page_func() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1066
+[04-Nov-2014 15:42:53 UTC] PHP  11. call_user_func_array() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1060
+[04-Nov-2014 15:42:53 UTC] PHP  12. OptimizePress_Page_Options->load_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1060
+[04-Nov-2014 15:42:53 UTC] PHP  13. OptimizePress_Page_Options->generate_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:178
+[04-Nov-2014 15:42:53 UTC] PHP  14. op_process_content_filter() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:545
+[04-Nov-2014 15:42:53 UTC] PHP  15. apply_filters() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/general.php:838
+[04-Nov-2014 15:42:53 UTC] PHP  16. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:192
+[04-Nov-2014 15:42:53 UTC] PHP  17. do_shortcode() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:192
+[04-Nov-2014 15:42:53 UTC] PHP  18. preg_replace_callback() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:201
+[04-Nov-2014 15:42:53 UTC] PHP  19. do_shortcode_tag() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:201
+[04-Nov-2014 15:42:53 UTC] PHP  20. call_user_func() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:287
+[04-Nov-2014 15:42:53 UTC] PHP  21. OptimizePress_Default_Assets::video_player() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:287
+[04-Nov-2014 15:42:53 UTC] PHP  22. OptimizePress_Blog_Video_Module->output() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/assets/default.php:3770
+[04-Nov-2014 15:42:53 UTC] PHP Warning:  Illegal string offset 'new_options' in /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/modules/blog/video/video.php on line 142
+[04-Nov-2014 15:42:53 UTC] PHP Stack trace:
+[04-Nov-2014 15:42:53 UTC] PHP   1. {main}() /Users/eveline/Sites/socialmet/wp-admin/admin.php:0
+[04-Nov-2014 15:42:53 UTC] PHP   2. do_action() /Users/eveline/Sites/socialmet/wp-admin/admin.php:200
+[04-Nov-2014 15:42:53 UTC] PHP   3. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:42:53 UTC] PHP   4. OptimizePress_PageBuilder->load_page_builder() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:42:53 UTC] PHP   5. OptimizePress_PageBuilder->setup_wizard() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:72
+[04-Nov-2014 15:42:53 UTC] PHP   6. call_user_func() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:154
+[04-Nov-2014 15:42:53 UTC] PHP   7. OptimizePress_PageBuilder->step_5() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:154
+[04-Nov-2014 15:42:53 UTC] PHP   8. OptimizePress_LiveEditor->load_editor() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:629
+[04-Nov-2014 15:42:53 UTC] PHP   9. op_page_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/live_editor.php:268
+[04-Nov-2014 15:42:53 UTC] PHP  10. _op_page_func() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1066
+[04-Nov-2014 15:42:53 UTC] PHP  11. call_user_func_array() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1060
+[04-Nov-2014 15:42:53 UTC] PHP  12. OptimizePress_Page_Options->load_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:1060
+[04-Nov-2014 15:42:53 UTC] PHP  13. OptimizePress_Page_Options->generate_layout() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:178
+[04-Nov-2014 15:42:53 UTC] PHP  14. op_process_content_filter() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/page_options.php:545
+[04-Nov-2014 15:42:53 UTC] PHP  15. apply_filters() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/functions/general.php:838
+[04-Nov-2014 15:42:53 UTC] PHP  16. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:192
+[04-Nov-2014 15:42:53 UTC] PHP  17. do_shortcode() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:192
+[04-Nov-2014 15:42:53 UTC] PHP  18. preg_replace_callback() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:201
+[04-Nov-2014 15:42:53 UTC] PHP  19. do_shortcode_tag() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:201
+[04-Nov-2014 15:42:53 UTC] PHP  20. call_user_func() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:287
+[04-Nov-2014 15:42:53 UTC] PHP  21. OptimizePress_Default_Assets::video_player() /Users/eveline/Sites/socialmet/wp-includes/shortcodes.php:287
+[04-Nov-2014 15:42:53 UTC] PHP  22. OptimizePress_Blog_Video_Module->output() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/assets/default.php:3770
+[04-Nov-2014 15:42:53 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/eveline/Sites/socialmet/wp-content/plugins/thrive-visual-editor/thrive-visual-editor.php on line 959
+[04-Nov-2014 15:42:53 UTC] PHP Stack trace:
+[04-Nov-2014 15:42:53 UTC] PHP   1. {main}() /Users/eveline/Sites/socialmet/wp-admin/admin.php:0
+[04-Nov-2014 15:42:53 UTC] PHP   2. do_action() /Users/eveline/Sites/socialmet/wp-admin/admin.php:200
+[04-Nov-2014 15:42:53 UTC] PHP   3. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:42:53 UTC] PHP   4. OptimizePress_PageBuilder->load_page_builder() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:42:53 UTC] PHP   5. OptimizePress_PageBuilder->setup_wizard() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:72
+[04-Nov-2014 15:42:53 UTC] PHP   6. call_user_func() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:154
+[04-Nov-2014 15:42:53 UTC] PHP   7. OptimizePress_PageBuilder->step_5() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:154
+[04-Nov-2014 15:42:53 UTC] PHP   8. OptimizePress_LiveEditor->load_editor() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/page_builder.php:629
+[04-Nov-2014 15:42:53 UTC] PHP   9. require_once() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/lib/admin/live_editor.php:278
+[04-Nov-2014 15:42:53 UTC] PHP  10. wp_head() /Users/eveline/Sites/socialmet/wp-content/plugins/optimizePressPlugin/pages/landing/1/template.php:23
+[04-Nov-2014 15:42:53 UTC] PHP  11. do_action() /Users/eveline/Sites/socialmet/wp-includes/general-template.php:2030
+[04-Nov-2014 15:42:53 UTC] PHP  12. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:42:53 UTC] PHP  13. wp_enqueue_scripts() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:42:53 UTC] PHP  14. do_action() /Users/eveline/Sites/socialmet/wp-includes/script-loader.php:918
+[04-Nov-2014 15:42:53 UTC] PHP  15. call_user_func_array() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:42:53 UTC] PHP  16. tve_frontend_enqueue_scripts() /Users/eveline/Sites/socialmet/wp-includes/plugin.php:470
+[04-Nov-2014 15:42:53 UTC] PHP  17. tve_enqueue_style_family() /Users/eveline/Sites/socialmet/wp-content/plugins/thrive-visual-editor/thrive-visual-editor.php:908
+[04-Nov-2014 15:59:04 UTC] OP SL error: Authorization failed
+[04-Nov-2014 15:59:05 UTC] OP SL error: Authorization failed
+[04-Nov-2014 15:59:37 UTC] OP SL error: Authorization failed
+[04-Nov-2014 15:59:38 UTC] OP SL error: Authorization failed
+[04-Nov-2014 15:59:39 UTC] OP SL error: Authorization failed
+[04-Nov-2014 16:00:04 UTC] OP SL error: API key already registered
+[04-Nov-2014 16:00:04 UTC] OP SL error: Authorization failed
+[04-Nov-2014 16:00:05 UTC] OP SL error: Authorization failed
+[04-Nov-2014 16:00:05 UTC] OP SL error: Authorization failed
