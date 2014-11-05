@@ -32,8 +32,18 @@ body {
   height: 100%;
   /* Negative indent footer by it's height */
   margin: 0 auto -100px;
+  background-color:#f7f7f7;
 }
-
+.cDivHeaderContainer,
+.page-container{
+    background-color:#FFF;
+}
+.cDivHeaderNavigation{
+    background-color:#FFF;
+    border-top:2px solid #ff9a03;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.15),0 1px 5px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.15),0 1px 5px rgba(0,0,0,0.075);
+}
 /* Set the fixed height of the footer here */
 #push,
 #site-footer {
@@ -102,7 +112,7 @@ margin-bottom: 20px;
 margin-top: 20px;
 }
 .page-header-top-right {
-margin-top: 34px;
+margin-top: 0px;
 }
 .navbar-default {
 background-image: none;
@@ -110,6 +120,7 @@ filter: none;
 border-radius: 0;
 -webkit-box-shadow: none;
 box-shadow: none;
+margin-bottom:0px;
 }
 .navbar-default a{
     font-weight:bold;

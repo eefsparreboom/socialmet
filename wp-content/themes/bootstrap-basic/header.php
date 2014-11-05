@@ -28,28 +28,30 @@
 		<![endif]-->
 		
 		<div id="wrap">
-		
-		
-		
-		<div class="container page-container">
-			<?php do_action('before'); ?> 
-			<header role="banner">
+                    <div class="container-fluid cDivHeaderContainer">
+                            <div class="container cDivHeaderTop">
 				<div class="row site-branding">
-					<div class="col-md-3 col-xs-10 site-title">
-						<h1 class="site-title-heading">
-							<a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><img src="<?php header_image(); ?>" class="img-responsive" alt="" /></a>
-						</h1>
-						
-					</div>
-                    <div class="visible-xs col-xs-2 cDivToggleMenu">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-primary-collapse">
-                            <span class="sr-only"><?php _e('Toggle navigation', 'bootstrap-basic'); ?></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
+                                    <div class="col-md-10 site-title">
+                                            <h1 class="site-title-heading">
+                                                    <a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><img src="<?php header_image(); ?>" class="img-responsive" alt="" /></a>
+                                            </h1>
+
+                                    </div>
+                                    <div class="visible-xs col-xs-2 cDivToggleMenu">
+                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-primary-collapse">
+                                            <span class="sr-only"><?php _e('Toggle navigation', 'bootstrap-basic'); ?></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
-					<div class="col-md-9 page-header-top-right">
+                    <div class="container-fluid cDivHeaderNavigation">
+                            <div class="container">
+                                <div class="row">
+					<div class="col-md-12 page-header-top-right">
 						<nav class="navbar navbar-default" role="navigation">
 							<div class="navbar-header">
 
@@ -61,12 +63,17 @@
 							</div><!--.navbar-collapse-->
 						</nav>
 					</div>
-				</div><!--.site-branding-->
+                                </div>
+                            </div><!--.site-branding-->
+                    </div><!--.site-branding-->
 				
-				<div class="row main-navigation">
-					
-				</div><!--.main-navigation-->
-			</header>
+				
+			
+		
+		
+		<div class="container page-container">
+			<?php do_action('before'); ?> 
+			
 			<?php if(is_page('home')){ 
                 $query = new WP_Query(array('post_type'=>'header'));
                 if($query->have_posts()):

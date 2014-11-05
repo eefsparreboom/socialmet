@@ -32,7 +32,7 @@ function bootstrapBasicGetMainColumnSize()
 			(is_active_sidebar('sidebar-right') && !is_active_sidebar('sidebar-left'))
 	) {
 		// if only one sidebar actived.
-		$main_column_size = 8;
+		$main_column_size = 9;
 	} else {
 		// if no sidebar actived.
 		$main_column_size = 12;
