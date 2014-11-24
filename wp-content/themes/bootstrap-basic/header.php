@@ -31,12 +31,13 @@
                     <div class="container-fluid cDivHeaderContainer">
                             <div class="container cDivHeaderTop">
 				<div class="row site-branding">
-                                    <div class="col-md-10 site-title">
+                                    <div class="col-xs-7 col-md-9 site-title">
                                             <h1 class="site-title-heading">
                                                     <a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><img src="<?php header_image(); ?>" class="img-responsive" alt="" /></a>
                                             </h1>
 
                                     </div>
+                                    
                                     <div class="visible-xs col-xs-2 cDivToggleMenu">
                                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-primary-collapse">
                                             <span class="sr-only"><?php _e('Toggle navigation', 'bootstrap-basic'); ?></span>
@@ -45,6 +46,7 @@
                                             <span class="icon-bar"></span>
                                         </button>
                                     </div>
+                                        <?php get_sidebar('header'); ?> 
                                 </div>
                             </div>
                     </div>

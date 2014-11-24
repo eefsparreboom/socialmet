@@ -10,7 +10,7 @@
 	</header><!-- .entry-header -->
 
 	
-	<?php if (is_search()) { // Only display Excerpts for Search ?> 
+	<?php if (1===1 || is_search()) { // Only display Excerpts for Search ?> 
 	<div class="entry-summary">
 		<?php the_excerpt(); ?> 
 		<div class="clearfix"></div>

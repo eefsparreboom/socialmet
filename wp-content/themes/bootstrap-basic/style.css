@@ -14,16 +14,42 @@ Tags: white, gray, light, one-column, two-columns, three-columns, left-sidebar, 
 This theme built with Twitter Bootstrap v.3. It is basic theme with basic style for build new theme with Bootstrap.
 
 */
-@import "css/opensans.css";
-@import "css/clarendon.css";
+@import "css/interstate.css";
 
 /*
 Required WordPress CSS
 */
 html,
 body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
   height: 100%;
+  font-size:12px !important;
+  
   /* The html and body elements cannot have any padding or margin. */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+.h1,.h2,.h3,.h4,.h5{
+    font-family: 'interstate_light',arial,sans-serif;
+    color:#ff9a03;
+}
+h1,.h1{
+    font-size:1.6em !important;
+}
+h2,.h2{
+    font-size:1.5em !important;
+}
+h3,.h3{
+    font-size:1.4em !important;
+}
+h4,.h4{
+    font-size:1.3em !important;
+}
+h5,.h5{
+    font-size:1.3em !important;
 }
 /* Wrapper for page content to push down footer */
 #wrap {
@@ -31,15 +57,15 @@ body {
   height: auto !important;
   height: 100%;
   /* Negative indent footer by it's height */
-  margin: 0 auto -100px;
-  background-color:#f7f7f7;
+  margin: 0 auto -200px;
+  /*background-color:#f7f7f7;*/
 }
 .cDivHeaderContainer,
 .page-container{
-    background-color:#FFF;
+    /*background-color:#FFF;*/
 }
 .cDivHeaderNavigation{
-    background-color:#FFF;
+    /*background-color:#FFF;*/
     border-top:2px solid #ff9a03;
     -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.15),0 1px 5px rgba(0,0,0,0.075);
     box-shadow: inset 0 1px 0 rgba(255,255,255,0.15),0 1px 5px rgba(0,0,0,0.075);
@@ -47,11 +73,19 @@ body {
 /* Set the fixed height of the footer here */
 #push,
 #site-footer {
-  height: 100px;
+  height: 200px;
 }
 #site-footer {
-  padding-top:35px;
-  background-color: #171717;
+  padding-top:15px;
+  background-color: #404040;
+  color:#fff;
+}
+#site-footer h3{
+    color:#fff;
+}
+#site-footer ul{
+    list-style:none;
+    padding:0px;
 }
 .embed-responsive .mejs-container,
 .embed-responsive video {
@@ -114,6 +148,12 @@ margin-top: 20px;
 .page-header-top-right {
 margin-top: 0px;
 }
+.navbar-collapse {
+
+padding-left: 0px;
+
+margin-left: -15px;
+}
 .navbar-default {
 background-image: none;
 filter: none;
@@ -122,8 +162,13 @@ border-radius: 0;
 box-shadow: none;
 margin-bottom:0px;
 }
+.navbar-default li{
+    font-family: 'interstate_light',arial,sans-serif;
+text-transform: uppercase;
+font-size:14px;
+}
 .navbar-default a{
-    font-weight:bold;
+    text-shadow: none;
 }
 .navbar-toggle .icon-bar,
 .navbar-default .navbar-toggle .icon-bar {
@@ -142,11 +187,15 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='transparent', 
 -webkit-box-shadow: none !important;
 box-shadow: none !important;
 }
-
-h1,h2,h3,h4,h5,
-.h1,.h2,.h3,.h4,.h5{
-    font-weight:bold;
-    color:#000;
+@media(max-width:768px){
+    #sidebar-header{
+   margin-bottom:20px;
+}
+}
+@media(min-width:768px){
+#sidebar-header{
+    padding-top:89px;
+}
 }
 .btn-primary {
 background-image: none;
@@ -157,107 +206,101 @@ color:#fff;
 
 .navbar-default .navbar-nav>li>a.btn-primary{
     color:#fff;
-    background-color:#d7502c;
+    background-color:#ff9a03;
     padding:10px 25px;
 }
 .navbar-default .navbar-nav>li>a.btn-primary:hover,
 .btn-primary:hover{
 background-color:#b84020;
 }
-#main-column{
+.site-content{
     padding-top:20px;
 }
 h1.entry-title{
     margin-top:0;
     padding-top:0;
 }
-#sidebar-right .widget_text .widget-title{
-    color:#FFF;
-}
-#sidebar-right .widget_text{
-    background-color:#899648;
-    color:#FFF;
-    padding:20px 25px;
-    border-radius:3px;
-    -webkit-border-radius: 3px;
-}
 
-.cDivHeaderSlider .cDivSlide{
-    position:relative;
-}
-.cDivHeaderSlider .cDivSlide .cDivContent{
-    position:absolute;
-    top:115px;
-    right:0px;
-    padding-right:80px;
-}
-.cDivHeaderSlider .cDivSlide .cDivContent .cDivQuote{
-    font-family:'Clarendon';
-    color:#FFF;
-    font-size:36px;
-    line-height:40px;
+.site-content .orangeBG{
+    background-color:#ff9a03 !important;
+    padding:0px 15px;
+    margin-left:-15px;
     margin-bottom:30px;
-    text-shadow: 4px 4px 2px rgba(50, 50, 50, 1);
 }
-.cDivHeaderSlider .cDivSlide .cDivContent a{
-    padding-left:40px;
-    padding-right:40px;
-    -webkit-box-shadow: 2px 2px 2px rgba(50, 50, 50, 1);
-    box-shadow: 2px 2px 2px rgba(50, 50, 50, 1);
+.site-content .orangeBG.twitter{
+    background-image: url(img/twitter.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+.site-content .orangeBG.training{
+    background-image: url(img/cap.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+.site-content .orangeBG h1{
+    font-size:30px !important;
+    text-transform: uppercase !important;
+    width:60% !important;
+    float:left !important;
+    color:#696969 !important;
+}
+.site-content .orangeBG p{
+    display:block !important;
+    width:40% !important;
+    float:left !important;
+}
+.site-content .orangeBG input{
+float:left;
+width:23% !important;
+margin-right:10px !important;
+padding-top:5px !important;
+padding-bottom:6px !important;
+border:3px solid #fff !important;
+border-top-color:#e8e8e8 !important;
+border-left-color: #e8e8e8 !important;
+border-radius:0px !important;
+font-family: 'interstate_light',arial,sans-serif !important;
+    text-transform: uppercase !important;
+}
+.site-content .orangeBG input[type="submit"],.site-content .orangeBG input[type="submit"]:hover, .site-content .orangeBG input[type="submit"]:focus {
+margin-right:0px !important;
+background-color: #696969 !important;
+border:none !important;
+color: #ffffff !important;
+font-family: 'interstate_light',arial,sans-serif !important;
+    text-transform: uppercase !important;
+    font-size:1.4em
+}
+.site-content .orangeBG.training{
+ padding:15px;   
 }
 
-.bx-wrapper {
-margin: 0 auto 30px;
+
+
+.site-content .orangeBG.nieuwsbrief{
+    padding:0px 15px !important;
+    margin-left:0px !important;
+    margin-bottom:0px !important;
 }
-.bx-wrapper .bx-viewport {
--moz-box-shadow: none;
--webkit-box-shadow: none;
-box-shadow: none;
-border: none;
-left: 0px;
-background: transparent;
+.site-content .orangeBG.nieuwsbrief input{
+    width:100% !important;
+    margin-right:0px !important;
+    margin-bottom:10px !important;
 
 }
-.bx-controls{
-    position: absolute;
-bottom: 33px;
-width: 100%;
+.site-content .orangeBG.nieuwsbrief h1{
+    color:#fff !important;
+    width:100% !important;
+    display:block  !important;
+    font-size:1.2em;
 }
-.bx-wrapper .bx-pager.bx-default-pager a {
-background: #fff;
-opacity: .5;
+.site-content .orangeBG.nieuwsbrief p{
+    display:block !important;
+    width:100% !important;
+    text-align:left !important;
+    color:#fff;
+}
 
-}
-.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {
-background: #fff;
-opacity: 1;
-}
-@media (max-width: 767px){
-    .cDivHeaderSlider .cDivSlide .cDivContent{
-        position:relative;
-        padding-right:0px;
-        top:15px;
-        padding-bottom:15px;
-    }
-    .cDivHeaderSlider .cDivSlide .cDivContent .cDivQuote{
-        font-family:'Clarendon';
-        color:#000;
-        font-size:24px;
-        line-height: 26px;
-        margin-bottom:0px;
-        text-shadow: none;
-    }
-    .bx-controls{
-        position: absolute;
-        top: -33px;
-        width: 100%;
-        height:40px;
-    }
-    .cDivHeaderSlider .cDivSlide .cDivContent a{
-        -webkit-box-shadow: none;
-        box-shadow: none;
-    }
-}
 .archive-area{
     margin-top:30px;
 }

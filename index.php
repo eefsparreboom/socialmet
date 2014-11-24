@@ -11,6 +11,8 @@
  *
  * @var bool
  */
+error_reporting(E_ALL ^ E_NOTICE ^ E_WARNING);
+
 define('WP_USE_THEMES', true);
 
 /** Loads the WordPress Environment and Template */

@@ -65,22 +65,15 @@ function bootstrapBasicWidgetsInit()
 //	));
 	
 	register_sidebar(array(
-		'name'          => __('Navigation bar right', 'bootstrap-basic'),
-		'id'            => 'navbar-right',
+		'name'          => __('Sidebar header', 'bootstrap-basic'),
+		'id'            => 'sidebar-header',
 		'before_widget' => '',
 		'after_widget'  => '',
 		'before_title'  => '',
 		'after_title'   => '',
 	));
 	
-	register_sidebar(array(
-		'name'          => __('Sidebar left', 'bootstrap-basic'),
-		'id'            => 'sidebar-left',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title">',
-		'after_title'   => '</h1>',
-	));
+	
 	
 	register_sidebar(array(
 		'name'          => __('Sidebar right', 'bootstrap-basic'),
@@ -96,8 +89,16 @@ function bootstrapBasicWidgetsInit()
 		'id'            => 'footer-left',
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h1 class="widget-title">',
-		'after_title'   => '</h1>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	));
+	register_sidebar(array(
+		'name'          => __('Footer middle', 'bootstrap-basic'),
+		'id'            => 'footer-middle',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
 	));
 	
 	register_sidebar(array(
@@ -105,8 +106,8 @@ function bootstrapBasicWidgetsInit()
 		'id'            => 'footer-right',
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h1 class="widget-title">',
-		'after_title'   => '</h1>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
 	));
 }// bootstrapBasicWidgetsInit
 add_action('widgets_init', 'bootstrapBasicWidgetsInit');

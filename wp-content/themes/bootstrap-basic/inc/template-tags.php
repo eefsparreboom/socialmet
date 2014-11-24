@@ -188,7 +188,7 @@ function bootstrapBasicGetLinkInContent()
  */
 function bootstrapBasicMoreLinkText() 
 {
-	return __('Continue reading <span class="meta-nav">&rarr;</span>', 'bootstrap-basic');
+	return __('Lees meer <span class="meta-nav">&rarr;</span>', 'bootstrap-basic');
 }// bootstrapBasicMoreLinkText
 
 
