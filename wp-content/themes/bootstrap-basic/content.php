@@ -3,10 +3,15 @@
 		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 
 		<?php if ('post' == get_post_type()) { ?> 
-		<div class="entry-meta">
-			<?php bootstrapBasicPostOn(); ?> 
-		</div><!-- .entry-meta -->
+		
 		<?php } //endif; ?> 
+        <?php $img = catch_that_image();
+        if ($img!=='' &&(1===1 || is_search())) { 
+             
+            ?> 
+            <img src="<?php echo get_template_directory_uri();?>/inc/thumb.php?zc=1&w=260&h=140&src=<?php echo $img;?>" class="img-responsive" />
+            
+            <?php } ?> 
 	</header><!-- .entry-header -->
 
 	
@@ -42,9 +47,7 @@
 				$categories_list = get_the_category_list(__(', ', 'bootstrap-basic'));
 				if (!empty($categories_list)) {
 			?> 
-			<span class="cat-links">
-				<?php echo bootstrapBasicCategoriesList($categories_list); ?> 
-			</span>
+			
 			<?php } // End if categories ?> 
 
 			<?php
@@ -52,19 +55,11 @@
 				$tags_list = get_the_tag_list('', __(', ', 'bootstrap-basic'));
 				if ($tags_list) {
 			?> 
-			<span class="tags-links">
-				<?php echo bootstrapBasicTagsList($tags_list); ?> 
-			</span>
-			<?php } // End if $tags_list ?> 
+			
+			<?php }  // End if $tags_list ?> 
 		</div><!--.entry-meta-category-tag-->
 		<?php } // End if 'post' == get_post_type() ?> 
 
-		<div class="entry-meta-comment-tools">
-			<?php if (! post_password_required() && (comments_open() || '0' != get_comments_number())) { ?> 
-			<span class="comments-link"><?php bootstrapBasicCommentsPopupLink(); ?></span>
-			<?php } //endif; ?> 
-
-			<?php bootstrapBasicEditPostLink(); ?> 
-		</div><!--.entry-meta-comment-tools-->
+		
 	</footer><!-- .entry-meta -->
 </article><!-- #post-## -->

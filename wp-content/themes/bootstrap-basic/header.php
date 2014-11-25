@@ -31,7 +31,7 @@
                     <div class="container-fluid cDivHeaderContainer">
                             <div class="container cDivHeaderTop">
 				<div class="row site-branding">
-                                    <div class="col-xs-7 col-md-9 site-title">
+                                    <div class="col-xs-10 col-md-9 site-title">
                                             <h1 class="site-title-heading">
                                                     <a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><img src="<?php header_image(); ?>" class="img-responsive" alt="" /></a>
                                             </h1>
